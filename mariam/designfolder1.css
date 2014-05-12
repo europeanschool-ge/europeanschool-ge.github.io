@@ -1,0 +1,191 @@
+﻿/*********************************
+*Selecting elements inside an id:
+*
+*This code selects all p elements inside the element
+* whose id is "frontMatter": #frontMatter p
+*
+*This code makes those elements red, and removes the 
+* space between them.:
+*   color:red;
+*   margin-top:0em;
+*   margin-bottom:0em;
+*
+**********************************/
+body 
+{
+background-image:url("https://imageshack.us/a/img818/236/91735682.png");
+background-attachment:fixed;
+background-repeat:repeat;
+background-position:center;
+}
+
+p
+{
+font-family:"Rockwell", serif;
+color:#f6f0bf
+}
+
+h1
+{
+font-family:"Rockwell", serif;
+color:#f6f0bf
+}
+
+h2
+{
+font-family:"Rockwell", serif;
+color:#f6f0bf
+}
+
+h3
+{
+font-family:"Rockwell", serif;
+color:#f6f0bf
+}
+
+h4
+{
+font-family:"Rockwell", serif;
+color:#f6f0bf
+}
+
+ul
+{
+font-family:"Rockwell", serif;
+color:#f6f0bf
+}
+
+ol
+{
+font-family:"Rockwell", serif;
+color:#f6f0bf
+}
+
+#frontMatter p
+{
+color:#f6f0bf;
+margin-top:0em;
+margin-bottom:0em;
+margin-left:2px;
+}
+
+#tbilisi
+{
+font-family:"Rockwell", serif;
+color:#f6f0bf
+}
+
+.criterion section
+{
+background-picture:url("https://imageshack.us/a/img818/236/91735682.png");
+border-style:solid;
+border-width:8px;
+border-color:#f6f0bf;
+margin:15px;
+padding:20px;
+}
+
+#criterionA
+{
+background-picture:url("https://imageshack.us/a/img818/236/91735682.png");
+}
+
+#criterionB
+{
+background-picture:url("https://imageshack.us/a/img818/236/91735682.png");
+}
+
+#criterionC
+{
+background-picture:url("https://imageshack.us/a/img818/236/91735682.png");
+}
+
+
+#criterionD
+{
+background-picture:url("https://imageshack.us/a/img818/236/91735682.png");
+}
+
+
+#criterionE
+{
+background-picture:url("https://imageshack.us/a/img818/236/91735682.png");
+}
+
+#designFolder
+{
+background-color:#b0c4de;
+margin:10px;
+padding:15px;
+}
+
+.mainheader
+{
+padding-top:20px;
+background-image:url("http://imageshack.us/photo/my-images/716/nxx9.png");
+background-repeat:no-repeat;
+}
+
+
+#tbilisi p
+{
+margin-top:0em;
+margin-bottom:0em;
+text-align:right;
+margin-right:2%;
+color:#8B4513
+}
+
+#designFolder
+{
+width:80%;
+margin-left:-10px;
+margin-top:-10px;
+padding-left:10px;
+padding-bottom:1px;
+background-color:#8B7813;
+}
+
+#designFolder h2
+{
+padding-top:4px;
+font-size:3em;
+}
+
+#techProject
+{
+background-color:#FF6347;
+float:right;
+width:350px;
+margin-top:100px;
+margin-left:10px;
+margin-bottom:5%;
+padding-left:15px;
+padding-right:15px;
+
+}
+
+#techProject li
+{
+margin-left:-10px;
+}
+#techProject h2
+{
+text-align:center;
+}
+
+
+/**********************************************************************************************/
+/*Button*/
+/**********************************************************************************************/
+.go-top
+{
+position:fixed;
+right: 0em;
+bottom: 1em;
+text-decoration:none;
+color:#f6f0bf;
+font-size:18px;
+padding: 1em;
+background-color:#8B7813; 
+}
