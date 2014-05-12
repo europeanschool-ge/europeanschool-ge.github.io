@@ -1,32 +1,91 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <title>
 Welcome to the European School International Section
 </title>
+<style>
+
+body
+{
+background-color:lightblue;
+}
+
+#sidebar
+{
+float:left;
+padding-bottom:500px;
+margin:25px;
+background-color: rgba(255, 255, 255, 1.0);
+}
+
+#sidebar img
+{
+display:block;
+margin-left:auto;
+margin-right:auto;
+margin-top:40px;
+}
+
+
+section
+{
+margin:20px;
+padding:10px;
+background-color: rgba(150, 150, 255, 0.6);
+}
+
+#mainheader
+{
+color:darkblue;
+padding-top:50px;
+margin-left:25px;
+font-family:sans-serif;
+font-size:1.2em;
+}
+
+#students_working
+{
+overflow:scroll;
+}
+
+</style>
+</head>
+
 
 <body>
-<header>
-  <a href="http://www.europeanschool.ge/ib/"><img style="display:block; margin-left:auto; margin-right:auto" src="http://www.europeanschool.ge/ib/templates/default/images/logo.png"></a>
+
+ <nav id="sidebar">
+  <a href="http://www.europeanschool.ge/ib/"><img src="http://www.europeanschool.ge/ib/templates/default/images/logo.png"></a>
+  <br>
+  
+  <section>
+   <header>
+     <h2>Teacher's Demos</h2>
+   </header>
+   <p><a href="/hangman">JavaScript Hangman</a></p>
+   <p><a href="/graphing">JavaScript Polynomial Equation Graphing App</a></p>
+  </section>
+
+  <section>
+   <header>
+    <h2>Student Projects</h2>
+   </header>
+   <p><a href="/nadia">Best Quiz Ever!</a> - by Nadia - MYP Grade 8</p>
+   <p>More Coming Soon!</p>
+  </section>
+ </nav>
+
+ <div id="mainheader">
+  <div>
   <h1>European School - International Section</h1>
   <p>An International Baccalaureate School</p>
-</header>
+  </div>
+ </div>
 
-<section>
-  <header>
-    <h2>Teacher's Demos</h2>
-  </header>
-  <p><a href="/hangman">JavaScript Hangman</a></p>
-  <p><a href="/graphing">JavaScript Polynomial Equation Graphing App</a></p>
-</section>
+ <img id="students_working" src="http://www.europeanschool.ge/ib/uploads/slides/1.jpg">
 
-<section>
-  <header>
-    <h2>Student Projects</h2>
-  </header>
-  <p><a href="/nadia">Nadia - MYP Grade 8</a></p>
-  <p>Coming Soon!</p>
-</section>
+ <p>MYP Grade 8: Hard at work!</p>
 
 </body>
 </html>
