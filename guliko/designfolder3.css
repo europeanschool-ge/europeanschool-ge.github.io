@@ -1,0 +1,46 @@
+﻿/*********************************
+*Selecting elements inside an id:
+*
+*This code selects all p elements inside the element
+* whose id is "frontMatter": #frontMatter p
+*
+*This code makes those elements red, and removes the 
+* space between them.:
+*   color:red;
+*   margin-top:0em;
+*   margin-bottom:0em;
+*
+**********************************/
+
+#frontMatter p
+{
+color:DeepPink;
+margin-top:0em;
+margin-bottom:0em;
+}
+
+
+
+/*********************************
+*Selecting elements inside a class:
+*This code selects all p elements inside any element
+* whose class is "criterion": .criterion div
+*
+*This code puts a solid, blue box around these elements.
+* The box will be one pixel wide.
+*   border-style:solid;
+*   border-width:1px;
+*   border-color:blue;
+*
+**********************************/
+.criterion div
+{
+border-style:solid;
+border-width:1px;
+border-color:blue;
+}
+
+body
+{
+background-color:lime;
+}
