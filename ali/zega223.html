@@ -1,0 +1,380 @@
+﻿<DOCTYPE html>
+<html>
+
+<body background="earth.jpg">
+
+<title>Science quiz for 5th graders</title> 
+
+
+<style>
+body {color:blue; font-family:Arial,Helvetica,sans-serif; font-size:15px;}
+h1 {color:#FF0000;}
+p.ex {color:#00FF00 ;}
+title {color:#FFFFFF;} 
+</style>
+
+<h1>Science quiz</h1>
+
+
+<script>
+
+
+
+var score = new Array;
+
+function showScore()
+{
+  var total=0;
+  for (i in score)
+  {
+    total+=score[i];
+  }
+  document.getElementById('score').innerHTML=total;
+
+}
+
+function check1()
+{
+  if(document.getElementById('a1correct').checked)
+ // if(document.question1["q1"]["correct"].checked)
+ // if(document.question1["q1"]["0"].checked)
+  {
+    document.getElementById('answer1').innerHTML="correct!";
+    score[0]=1;
+  }
+  else
+  {
+    document.getElementById('answer1').innerHTML="wrong!";
+    score[0]=0;
+  }    
+  showScore();
+}
+
+
+function check2()
+{
+  if(document.getElementById('a2correct').checked)
+  {
+    document.getElementById('answer2').innerHTML="correct!";
+    score[1]=1;
+  }
+  else
+  {
+    document.getElementById('answer2').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check3()
+{
+  if(document.getElementById('a3correct').checked)
+  {
+    document.getElementById('answer3').innerHTML="correct!";
+    score[2]=1;
+  }
+  else
+  {
+    document.getElementById('answer3').innerHTML="wrong!";
+    score[2]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check4()
+{
+  if(document.getElementById('a4correct').checked)
+  {
+    document.getElementById('answer4').innerHTML="correct!";
+    score[3]=1;
+  }
+  else
+  {
+    document.getElementById('answer4').innerHTML="wrong!";
+    score[3]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check5()
+{
+  if(document.getElementById('a5correct').checked)
+  {
+    document.getElementById('answer5').innerHTML="correct!";
+    score[4]=1;
+  }
+  else
+  {
+    document.getElementById('answer5').innerHTML="wrong!";
+    score[4]=0;
+  }
+  showScore();
+}
+
+function check6()
+{
+  if(document.getElementById('a6correct').checked)
+  {
+    document.getElementById('answer6').innerHTML="correct!";
+    score[5]=1;
+  }
+  else
+  {
+    document.getElementById('answer6').innerHTML="wrong!";
+    score[5]=0;
+  }
+  showScore();
+}
+
+function check7()
+{
+  if(document.getElementById('a7correct').checked)
+  {
+    document.getElementById('answer7').innerHTML="correct!";
+    score[6]=1;
+  }
+  else
+  {
+    document.getElementById('answer').innerHTML="wrong!";
+    score[6]=0;
+  }
+  showScore();
+}
+
+
+
+
+
+function check8()
+{
+  if(document.getElementById('a8correct').checked)
+  {
+    document.getElementById('answer8').innerHTML="correct!";
+    score[7]=1;
+  }
+  else
+  {
+    document.getElementById('answer8').innerHTML="wrong!";
+    score[7]=0;
+  }
+  showScore();
+}
+
+function check9()
+{
+  if(document.getElementById('a9correct').checked)
+  {
+    document.getElementById('answer9').innerHTML="correct!";
+    score[8]=1;
+  }
+  else
+  {
+    document.getElementById('answer9').innerHTML="wrong!";
+    score[8]=0;
+  }
+  showScore();
+}
+
+function check10()
+{
+  if(document.getElementById('a10correct').checked)
+  {
+    document.getElementById('answer10').innerHTML="correct!";
+    score[9]=1;
+  }
+  else
+  {
+    document.getElementById('answer10').innerHTML="wrong!";
+    score[9]=0;
+  }
+  showScore();
+}
+
+
+
+
+
+</script>
+
+
+</head>
+
+
+<body>
+<div>
+<h2>Question 1: which of these are the states of matter?</h2>
+
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>solid-gas only<br></span>
+<input type="radio" name="q1" id="a1correct"><span>solid-liquid-gas-plasma<br></span>
+<input type="radio" name="q1"><span>liquid-solid only<br></span>
+<input type="radio" name="q1"><span>solid-liquid-gas<br><span>
+<input type="button" value="submit answer" onclick="check1()">
+</form>
+
+<span id="answer1"></span>
+
+</div>
+
+
+
+<div>
+<h2>Question 2: which states of matter is water?</h2>
+
+<form name="question1">
+<input type="radio" name="q1"><span>plasma<br></span>
+<input type="radio" name="q1"><span>gas<br></span>
+<input type="radio" name="q1" id="a2correct"><span>liquid<br></span>
+<input type="radio" name="q1"><span>solid<br></span>
+<input type="button" value="submit answer" onclick="check2()">
+</form>
+
+<span id="answer2"></span>
+</div>
+
+
+
+<div>
+<h2>Question 3: which state of mater is hydrogen?</h2>
+
+<form name="question1">
+<input type="radio" name="q1"><span>liquid<br></span>
+<input type="radio" name="q1" id="a3correct"><span>gas<br></span>
+<input type="radio" name="q1"><span>solid<br></span>
+<input type="radio" name="q1"><span>plasma<br></span>
+<input type="button" value="submit answer" onclick="check3()">
+</form>
+
+<span id="answer3"></span>
+</div>
+
+
+<div>
+<h2>Question 4: which state of matter is ice?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>liquid<br></span>
+<input type="radio" name="q1"><span>gas<br></span>
+<input type="radio" name="q1"><span>plasma<br></span>
+<input type="radio" name="q1"id="a4correct"><span>solid<br></span>
+<input type="button" value="submit answer" onclick="check4()">
+</form>
+
+<span id="answer4"></span>
+</div>
+
+
+<div>
+<h2>Question 5: which animal has the biggest heart?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"id="a5correct"><span>whale<br></span>
+<input type="radio" name="q1"><span>tiger<br></span>
+<input type="radio" name="q1"><span>octopus<br></span>
+<input type="radio" name="q1"><span>lion<br></span>
+<input type="button" value="submit answer" onclick="check5()">
+</form>
+
+<span id="answer5"></span>
+
+</div>
+
+<div>
+<h2>Question 6: which animal is considered to be the king of the jungle?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>monkey<br></span>
+<input type="radio" name="q1"><span>cheetah<br></span>
+<input type="radio" name="q1"><span>tiger<br></span>
+<input type="radio" name="q1"id="a6correct"><span>lion<br></span>
+<input type="button" value="submit answer" onclick="check6()">
+</form>
+
+<span id="answer6"></span>
+
+</div>
+
+
+<div>
+<h2>Question 7: which is the fastest animal on earth?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"id="a7correct"><span>cheetah<br></span>
+<input type="radio" name="q1"><span>lion <br></span>
+<input type="radio" name="q1"><span>zebra<br></span>
+<input type="radio" name="q1"><span>tiger<br></span>
+<input type="button" value="submit answer" onclick="check7()">
+</form>
+
+<span id="answer7"></span>
+
+</div>
+
+
+
+<div>
+<h2>Question 8: which planet is the closest to sun?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"id="a8correct"><span>mercury<br></span>
+<input type="radio" name="q1"><span>venus <br></span>
+<input type="radio" name="q1"><span>earth<br></span>
+<input type="radio" name="q1"><span>mars<br></span>
+<input type="button" value="submit answer" onclick="check8()">
+</form>
+
+<span id="answer8"></span>
+
+</div>
+
+
+<div>
+<h2>Question 9: is sun the biggest star?</h2>
+
+
+<form name="question1">
+
+<input type="radio" name="q1"><span>false <br></span>
+<input type="radio" name="q1"id="a9correct"><span>true<br></span>
+
+<input type="button" value="submit answer" onclick="check9()">
+</form>
+
+<span id="answer9"></span>
+
+</div>
+
+
+<div>
+<h2>Question 10: what is the planet which we live on?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>mercury<br></span>
+<input type="radio" name="q1"id="a10correct"><span>earth<br></span>
+<input type="radio" name="q1"><span>Mars<br></span>
+<input type="radio" name="q1"><span>venus<br></span>
+<input type="button" value="submit answer" onclick="check10()">
+</form>
+
+<span id="answer10"></span>
+
+</div>
+
+<h1>Score</h1>
+<p>Current score: <span id="score">0</span></p>

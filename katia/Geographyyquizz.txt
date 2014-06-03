@@ -1,0 +1,260 @@
+﻿<!DOCTYPE html>
+<html>
+
+<title>!Geography QUIZ!</title>
+
+<link rel="stylesheet" type="text/css" href="color22.css">
+<h1> !Geography QUIZ!</h1>
+<script>
+
+var score = new Array;
+
+function showScore()
+{
+  var total=0;
+  for (i in score)
+  {
+    total+=score[i];
+  }
+  document.getElementById('score').innerHTML=total;
+
+}
+
+function check1()
+{
+  if(document.getElementById('a1correct').checked)
+ // if(document.question1["q1"]["correct"].checked)
+ // if(document.question1["q1"]["0"].checked)
+  {
+    document.getElementById('answer1').innerHTML="You're good at the start..";
+    score[0]=1;
+  }
+  else
+  {
+    document.getElementById('answer1').innerHTML="Nooo...try again";
+    score[0]=0;
+  }    
+  showScore();
+}
+
+
+function check2()
+{
+  if(document.getElementById('a2correct').checked)
+  {
+    document.getElementById('answer2').innerHTML="How did you know!?";
+    score[1]=1;
+  }
+  else
+  {
+    document.getElementById('answer2').innerHTML="ye..no,try again";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check3()
+{
+  if(document.getElementById('a3correct').checked)
+  {
+    document.getElementById('answer3').innerHTML="You're quite smart :)";
+    score[2]=1;
+  }
+  else
+  {
+    document.getElementById('answer3').innerHTML="think again my friend...";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check4()
+{
+  if(document.getElementById('a4correct').checked)
+  {
+    document.getElementById('answer4').innerHTML="O_O...you know too much";
+    score[3]=1;
+  }
+  else
+  {
+    document.getElementById('answer4').innerHTML="Het....try again";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check5()
+{
+  if(document.getElementById('a5correct').checked)
+  {
+    document.getElementById('answer5').innerHTML="Wow....too goood";
+    score[4]=1;
+  }
+  else
+  {
+    document.getElementById('answer5').innerHTML="....no,think again";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check6()
+{
+  if(document.getElementById('a6correct').checked)
+  {
+    document.getElementById('answer6').innerHTML="Hiva!(good!...in Finnish)...you still know too much";
+    score[5]=1;
+  }
+  else
+  {
+    document.getElementById('answer6').innerHTML="sorry....but no, think again";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check7()
+{
+  if(document.getElementById('a7correct').checked)
+{
+    document.getElementById('answer7').innerHTML="YOU'RE AWESOME!!!! :D...you know too much";
+    score[6]=1;
+  }
+  else
+  {
+    document.getElementById('answer7').innerHTML="sorry....but...think again";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+</script>
+
+</head>
+
+<body background="unnamed.jpg">
+<body>
+
+<h2>Question 1:What's the capital of U.S.A?</h2>
+
+<img border="0" src="picture1.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>New York</span><br>
+<input type="radio" name="q1" id="a1correct"><span>Washington D.C<br></span>
+<input type="radio" name="q1"><span>Washington<br></span>
+<input type="radio" name="q1"><span>...unknown<br><span>
+<input type="button" value="submit answer" onclick="check1()">
+</form>
+
+<span id="answer1"></span>
+
+
+
+<h2>Question 2:What country's capital is Sweden?</h2>
+
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>Shotkolm<br></span>
+<input type="radio" name="q1"><span>Something...<br></span>
+<input type="radio" name="q1" id="a2correct"><span>Stockolm<br></span>
+<input type="radio" name="q1"><span>Malmo<br></span>
+<input type="button" value="submit answer" onclick="check2()">
+</form>
+
+<span id="answer2"></span>
+
+
+
+<h2>Question 3: How many people do you think live in this planet?</h2>
+
+<form name="question1">
+<input type="radio" name="q1"><span>7 million<br></span>
+<input type="radio" name="q1" id="a3correct"><span>7 billion<br></span>
+<input type="radio" name="q1"><span>100 billion<br></span>
+<input type="radio" name="q1"><span>A lot of people...<br></span>
+<input type="button" value="submit answer" onclick="check3()">
+</form>
+
+<span id="answer3"></span>
+
+
+
+<h2>Question 4: Who is the president of Russia?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>Obama<br></span>
+<input type="radio" name="q1"><span>Me<br></span>
+<input type="radio" name="q1"><span>Lutin<br></span>
+<input type="radio" name="q1"id="a4correct"><span>Putin<br></span>
+<input type="button" value="submit answer" onclick="check4()">
+</form>
+
+<span id="answer4"></span>
+
+<h2>Question 5: Which do you think is the most populated country?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"id="a5correct"><span>China<br></span>
+<input type="radio" name="q1"><span>Russia...ofcourse<br></span>
+<input type="radio" name="q1"><span>U.S.A<br></span>
+<input type="radio" name="q1"><span>Africa<br></span>
+<input type="button" value="submit answer" onclick="check5()">
+</form>
+
+<span id="answer5"></span>
+
+<h2>Question 6: Which country do you think has the most amount of lakes?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>Russia....of course!<br></span>
+<input type="radio" name="q1"><span>Australia<br></span>
+<input type="radio" name="q1"><span>Africa<br></span>
+<input type="radio" name="q1"id="a6correct"><span>Finland<br></span>
+<input type="button" value="submit answer" onclick="check6()">
+</form>
+
+<span id="answer6"></span>
+
+<h2>Question 7: The hardest...What is the capital of Iceland?</h2>
+
+<input type="radio" name="q1"><span>Reijavik...<br></span>
+<input type="radio" name="q1"><span>Reikavik...<br></span>
+<input type="radio" name="q1"id="a7correct"><span>Reykjavik...<br></span>
+<input type="radio" name="q1"><span>Reyjkavik...<br></span>
+<input type="button" value="submit answer" onclick="check7()">
+</form>
+
+<span id="answer7"></span>
+
+
+
+
+
+
+<h1>Score</h1>
+<p>Current score: <span id="score">0</span>
+
+
+
+
+
+
+

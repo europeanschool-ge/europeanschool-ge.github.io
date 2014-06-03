@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="quiz_score.js"></script>
+</head>
+<body>
+<style>
+body {color:grey; font-family:Arial,Helvetica,sans-serif; font-size:15px;}
+h1 {color:#C00000 ;}
+p.ex {color:rgb(255,255,0);}
+</style>
+</head>
+<body background="http://hdwalldownloads.com/wp-content/uploads/2014/02/Black-Map-World-Wallpaper.jpg">
+
+
+
+<h1>What is the capital city of Japan?</h1>
+
+<form name="question1">
+<input type="radio" name="q1" id="a1a">Pekin<br>
+<input type="radio" name="q1" id="a1b">Hong Kong<br>
+<input type="radio" name="q1" id="a1c">Tokyo<br>
+<input type="radio" name="q1" id="a1d">Shanghai<br>
+<input type="button" value="submit answer" onclick="check(1)">
+</form>
+
+<span id="answer1"></span>
+
+
+
+<h1>Which of these countries has 4 national languages?</h1>
+
+<form name="question2">
+<input type="radio" name="q2" id="a2a">U.S.A<br>
+<input type="radio" name="q2" id="a2b">Switzerland<br>
+<input type="radio" name="q2" id="a2c">Australia<br>
+<input type="radio" name="q2" id="a2d">Norway<br>
+<input type="button" value="submit answer" onclick="check(2)">
+</form>
+
+<span id="answer2"></span>
+
+
+<h1>What is Europe's smallest country?</h1>
+
+<form name="question3">
+<input type="radio" name="q3" id="a3a">France<br>
+<input type="radio" name="q3" id="a3b">Italy<br>
+<input type="radio" name="q3" id="a3c">Monaco<br>
+<input type="radio" name="q3" id="a3d">Germany<br>
+<input type="button" value="submit answer" onclick="check(3)">
+</form>
+
+<span id="answer3"></span>
+
+
+
+
+<h1>What is the largest country in Arabian peninsula?</h1>
+
+<form name="question4">
+<input type="radio" name="q4" id="a4a">Iran<br>
+<input type="radio" name="q4" id="a4b">Syria<br>
+<input type="radio" name="q4" id="a4c">Saudi Arabia<br>
+<input type="radio" name="q4" id="a4d">Iraq<br>
+<input type="button" value="submit answer" onclick="check(4)">
+</form>
+
+<span id="answer4"></span>
+
+
+
+<h1>In which of those countries is Spanish not spoken?</h1>
+
+<form name="question5">
+<input type="radio" name="q5" id="a5a">Colombia<br>
+<input type="radio" name="q5" id="a5b">Peru<br>
+<input type="radio" name="q5" id="a5c">Cuba<br>
+<input type="radio" name="q5" id="a5d">Brazil<br>
+<input type="button" value="submit answer" onclick="check(5)">
+</form>
+
+<span id="answer5"></span>
+
+
+<h1>Which country's flag is this?</h1>
+<img border="0" src="data:image/jpeg;base64,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" alt="French flag" width="200" height="150">
+
+<form name="question6">
+<input type="radio" name="q6" id="a6a">France<br>
+<input type="radio" name="q6" id="a6b">Russia<br>
+<input type="radio" name="q6" id="a6c">Netherlands<br>
+<input type="radio" name="q6" id="a6d">Belgium<br>
+<input type="button" value="submit answer" onclick="check(6)">
+</form>
+
+<span id="answer6"></span>
+
+
+<h1>Which of these countries is the second largest country in the world?</h1>
+
+<form name="question7">
+<input type="radio" name="q7" id="a7a">Kazakstan<br>
+<input type="radio" name="q7" id="a7b">China<br>
+<input type="radio" name="q7" id="a7c">Canada<br>
+<input type="radio" name="q7" id="a7d">U.S.A<br>
+<input type="button" value="submit answer" onclick="check(7)">
+</form>
+
+<span id="answer7"></span>
+
+
+
+<h1>Which statement is false?</h1>
+
+<form name="question8">
+<input type="radio" name="q8" id="a8a">Milan is Italian city<br>
+<input type="radio" name="q8" id="a8b">Paraguay is African country.<br>
+<input type="radio" name="q8" id="a8c">Washington D.C is capital of USA.<br>
+<input type="radio" name="q8" id="a8d">Kiev is capital of Ukraine.<br>
+<input type="button" value="submit answer" onclick="check(8)">
+</form>
+
+<span id="answer8"></span>
+
+
+<h1>Which country is the Leaning Tower of Pisa in?</h1>
+
+<form name="question9">
+<input type="radio" name="q9" id="a9a">Austria<br>
+<input type="radio" name="q9" id="a9b">Greece<br>
+<input type="radio" name="q9" id="a9c">Sweden<br>
+<input type="radio" name="q9" id="a9d">Italy<br>
+<input type="button" value="submit answer" onclick="check(9)">
+</form>
+
+<span id="answer9"></span>
+
+
+
+<h1>Which country's falg is this?</h1>
+
+<img border="0" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People's_Republic_of_China.svg/1500px-Flag_of_the_People's_Republic_of_China.svg.png" alt="Chiese flag" width="200" height="150">
+
+
+<form name="question10">
+<input type="radio" name="q10" id="a10a">China<br>
+<input type="radio" name="q10" id="a10b">Laos<br>
+<input type="radio" name="q10" id="a10c">Vietnam<br>
+<input type="radio" name="q10" id="a10d">Japan<br>
+<input type="button" value="submit answer" onclick="check(10)">
+</form>
+
+<span id="answer10"></span>
+
+
+
+<h1>Which statement is true?</h1>
+
+<form name="question11">
+<input type="radio" name="q11" id="a11a">Cameron is a country in Asia<br>
+<input type="radio" name="q11" id="a11b">Mexico is in South America<br>
+<input type="radio" name="q11" id="a11c">Prague is capital of Czech Republic<br>
+<input type="radio" name="q11" id="a11d">UK is surrounded by Indian Ocean<br>
+<input type="button" value="submit answer" onclick="check(11)">
+</form>
+
+<span id="answer11"></span>
+
+
+
+
+<h1>What is the name of this country?</h1>
+
+<img border="0" src="http://old.undp.org.ge/img/placeholders/country-home/bosnia-map.png" width="250" height="150">
+
+
+<form name="question12">
+<input type="radio" name="q12" id="a12a">Turkey<br>
+<input type="radio" name="q12" id="a12b">Georgia<br>
+<input type="radio" name="q12" id="a12c">UK<br>
+<input type="radio" name="q12" id="a12d">Pakistan<br>
+<input type="button" value="submit answer" onclick="check(12)">
+</form>
+
+<span id="answer12"></span>
+
+
+
+<h1>Which of these regions is not in the United Kingdom</h1>
+
+<form name="question13">
+<input type="radio" name="q13" id="a13a">Hamburg<br>
+<input type="radio" name="q13" id="a13b">England<br>
+<input type="radio" name="q13" id="a13c">Scotland<br>
+<input type="radio" name="q13" id="a13d">Wales<br>
+<input type="button" value="submit answer" onclick="check(13)">
+</form>
+
+<span id="answer13"></span>
+
+
+<h1>To which country does the Statue of Liberty belong?</h1>
+
+<img border="0" src="http://upload.wikimedia.org/wikipedia/commons/a/a1/Statue_of_Liberty_7.jpg" alt="Statue" width="150" height="200">
+
+<form name="question14">
+<input type="radio" name="q14" id="a14a">Spain<br>
+<input type="radio" name="q14" id="a14b">Nepal<br>
+<input type="radio" name="q14" id="a14c">Greenland<br>
+<input type="radio" name="q14" id="a14d">USA<br>
+<input type="button" value="submit answer" onclick="check(14)">
+</form>
+
+<span id="answer14"></span>
+
+
+<h1>To which mountain range does the Mount Everest belong?</h1>
+
+<form name="question15">
+<input type="radio" name="q15" id="a15a">Alps<br>
+<input type="radio" name="q15" id="a15b">Ontario<br>
+<input type="radio" name="q15" id="a15c">Himalayas<br>
+<input type="radio" name="q15" id="a15d">San Juan Mountains<br>
+<input type="button" value="submit answer" onclick="check(15)">
+</form>
+
+<span id="answer15"></span>
+
+
+<h1>Score</h1>
+<p><span id="score">0</span></p>
+
+
+
+</body>

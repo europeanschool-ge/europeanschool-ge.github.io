@@ -1,0 +1,253 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+body
+{
+background-image:url("lalala.jpg");
+}
+div
+{
+margin:100px;
+padding:10px;
+background-color: rgba(255, 255, 255, 0.5);
+}
+</style>
+</head>
+
+
+
+
+<title>The Fun Quiz</title>
+
+<script>
+document.write("<h1>Welcome guys to my quiz!:)
+So let's check what you know.</h1>");
+</script>
+ 
+
+<script>
+
+var score = new Array;
+
+function showScore()
+{
+  var total=0;
+  for (i in score)
+  {
+    total+=score[i];
+  }
+  document.getElementById('score').innerHTML=total;
+
+}
+
+function check1()
+{
+  if(document.getElementById('a1correct').checked)
+ // if(document.question1["q1"]["correct"].checked)
+ // if(document.question1["q1"]["0"].checked)
+  {
+    document.getElementById('answer1').innerHTML="correct!";
+    score[0]=1;
+  }
+  else
+  {
+    document.getElementById('answer1').innerHTML="wrong!";
+    score[0]=0;
+  }    
+  showScore();
+}
+
+
+function check2()
+{
+  if(document.getElementById('a2correct').checked)
+  {
+    document.getElementById('answer2').innerHTML="correct!";
+    score[1]=1;
+  }
+  else
+  {
+    document.getElementById('answer2').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check3()
+{
+  if(document.getElementById('a3correct').checked)
+  {
+    document.getElementById('answer3').innerHTML="correct!";
+    score[2]=1;
+  }
+  else
+  {
+    document.getElementById('answer3').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check4()
+{
+  if(document.getElementById('a4correct').checked)
+  {
+    document.getElementById('answer4').innerHTML="correct!";
+    score[3]=1;
+  }
+  else
+  {
+    document.getElementById('answer4').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+
+</script>
+
+
+
+</head>
+<body>
+
+<div>
+<h2>Question 1:What is Human Evolution?</h2>
+
+<img border="0" src="pokemon.png" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+
+<input type="radio" name="q1" id="a1correct"><span>The process of human origins<br></span>
+<input type="radio" name="q1"><span>Pokemons<br></span>
+<input type="radio" name="q1"><span>Monkeys<br><span>
+<input type="button" value="submit answer" onclick="check1()">
+</form>
+
+<span id="answer1"></span>
+</div>
+
+<div>
+<h2>Question 2:Why Antartica- the coldest continent on earth  ?</h2>
+
+<img border="0" src="pingvini.jpeg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+
+<input type="radio" name="q1"><span>Because there is a lot of ice and snow.<br></span>
+<input type="radio" name="q1"><span>It is the Pole<br></span>
+<input type="radio" name="q1" id="a2correct"><span>There is not so much sunrays <br></span>
+<input type="button" value="submit answer" onclick="check2()">
+</form>
+
+<span id="answer2"></span>
+
+</div>
+
+<div>
+
+<h2>Question 3:Why watermelon is berry?</h2>
+
+<img border="0" src="Watermelon.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Because it grows on a bash<br></span>
+<input type="radio" name="q1" id="a3correct"><span>Because inside are a lot of seeds and juicy flesh<br></span>
+<input type="radio" name="q1"><span>What are you talking about?? It is not berry<br></span>
+<input type="button" value="submit answer" onclick="check3()">
+</form>
+
+<span id="answer3"></span>
+
+</div>
+
+<div>
+
+<h2>Question 4: Why are the windows steamed?</h2>
+
+<img border="0" src="4196227362_b7188eb66f.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Because of temperature°<br></span>
+<input type="radio" name="q1"><span>Because of moist<br></span>
+<input type="radio" name="q1"id="a4correct"><span>Both of them<br></span>
+<input type="button" value="submit answer" onclick="check4()">
+</form>
+
+<span id="answer4"></span>
+</div>
+
+
+<h1>Score</h1>
+<p>Current score: <span id="score">0</span></p>
+
+<p id="demo">
+Did You Like This Quiz?
+</p>
+
+
+<script>
+function myFunction()
+{
+x=document.getElementById("demo");  // Find the element
+x.innerHTML="Thanks ^_^";    // Change the content
+}
+</script>
+
+
+
+
+<script>
+function myFunction1()
+{
+x=document.getElementById("demo");  // Find the element
+x.innerHTML="Ok :)";    // Change the content
+}
+</script>
+
+<script>
+function myFunction1()
+{
+x=document.getElementById("demo");  // Find the element
+x.innerHTML=":)";    // Change the content
+}
+</script>
+
+
+
+
+<button type="button" onclick="myFunction()">Yes!</button>
+
+<button type="button" onclick="myFunction1()">No!</button>
+
+<button type="button" onclick="myFunction1()">Maybe!</button>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,394 @@
+﻿<DOCTYPE html>
+<html>
+<body background="map.png">
+
+<head>
+<title>quiz for 5th graders</title> 
+
+
+<style>
+body {color:blue; font-family:Arial,Helvetica,sans-serif; font-size:15px;}
+h1 {color:#FF0000;}
+p.ex {color:#00FF00 ;}
+title {color:#FFFFFF;} 
+</style>
+
+
+<script>
+//document.write("<h1>HEY THERE! In this quiz there is 20 questions. Have Fun!</h1>");
+</script>
+
+
+
+<script>
+
+
+
+var score = new Array;
+
+function showScore()
+{
+  var total=0;
+  for (i in score)
+  {
+    total+=score[i];
+  }
+  document.getElementById('score').innerHTML=total;
+
+}
+
+function check1()
+{
+  if(document.getElementById('a1correct').checked)
+ // if(document.question1["q1"]["correct"].checked)
+ // if(document.question1["q1"]["0"].checked)
+  {
+    document.getElementById('answer1').innerHTML="correct!";
+    score[0]=1;
+  }
+  else
+  {
+    document.getElementById('answer1').innerHTML="wrong!";
+    score[0]=0;
+  }    
+  showScore();
+}
+
+
+function check2()
+{
+  if(document.getElementById('a2correct').checked)
+  {
+    document.getElementById('answer2').innerHTML="correct!";
+    score[1]=1;
+  }
+  else
+  {
+    document.getElementById('answer2').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check3()
+{
+  if(document.getElementById('a3correct').checked)
+  {
+    document.getElementById('answer3').innerHTML="correct!";
+    score[2]=1;
+  }
+  else
+  {
+    document.getElementById('answer3').innerHTML="wrong!";
+    score[2]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check4()
+{
+  if(document.getElementById('a4correct').checked)
+  {
+    document.getElementById('answer4').innerHTML="correct!";
+    score[3]=1;
+  }
+  else
+  {
+    document.getElementById('answer4').innerHTML="wrong!";
+    score[3]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check5()
+{
+  if(document.getElementById('a5correct').checked)
+  {
+    document.getElementById('answer5').innerHTML="correct!";
+    score[4]=1;
+  }
+  else
+  {
+    document.getElementById('answer5').innerHTML="wrong!";
+    score[4]=0;
+  }
+  showScore();
+}
+
+function check6()
+{
+  if(document.getElementById('a6correct').checked)
+  {
+    document.getElementById('answer6').innerHTML="correct!";
+    score[5]=1;
+  }
+  else
+  {
+    document.getElementById('answer6').innerHTML="wrong!";
+    score[5]=0;
+  }
+  showScore();
+}
+
+function check7()
+{
+  if(document.getElementById('a7correct').checked)
+  {
+    document.getElementById('answer7').innerHTML="correct!";
+    score[6]=1;
+  }
+  else
+  {
+    document.getElementById('answer').innerHTML="wrong!";
+    score[6]=0;
+  }
+  showScore();
+}
+
+
+
+
+
+function check8()
+{
+  if(document.getElementById('a8correct').checked)
+  {
+    document.getElementById('answer8').innerHTML="correct!";
+    score[7]=1;
+  }
+  else
+  {
+    document.getElementById('answer8').innerHTML="wrong!";
+    score[7]=0;
+  }
+  showScore();
+}
+
+function check9()
+{
+  if(document.getElementById('a9correct').checked)
+  {
+    document.getElementById('answer9').innerHTML="correct!";
+    score[8]=1;
+  }
+  else
+  {
+    document.getElementById('answer9').innerHTML="wrong!";
+    score[8]=0;
+  }
+  showScore();
+}
+
+function check10()
+{
+  if(document.getElementById('a10correct').checked)
+  {
+    document.getElementById('answer10').innerHTML="correct!";
+    score[9]=1;
+  }
+  else
+  {
+    document.getElementById('answer10').innerHTML="wrong!";
+    score[9]=0;
+  }
+  showScore();
+}
+
+
+
+
+
+</script>
+
+
+</head>
+
+
+<body>
+<div>
+<h2>Question 1: What is the capitla of Georgia?</h2>
+
+<img border="0" src="georgia.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>zugdidi<br></span>
+<input type="radio" name="q1" id="a1correct"><span>Tbilisi<br></span>
+<input type="radio" name="q1"><span>kutaisi<br></span>
+<input type="radio" name="q1"><span>sokhumi<br><span>
+<input type="button" value="submit answer" onclick="check1()">
+</form>
+
+<span id="answer1"></span>
+
+</div>
+
+
+
+<div>
+<h2>Question 2: What is the national language in the U.S.A?</h2>
+
+<form name="question1">
+<input type="radio" name="q1"><span>There is more than 1 national language<br></span>
+<input type="radio" name="q1"><span>English<br></span>
+<input type="radio" name="q1" id="a2correct"><span>There is no national language<br></span>
+<input type="radio" name="q1"><span>none of the options<br></span>
+<input type="button" value="submit answer" onclick="check2()">
+</form>
+
+<span id="answer2"></span>
+</div>
+
+
+
+<div>
+<h2>Question 3: What is the capital of turkey?</h2>
+
+<form name="question1">
+<input type="radio" name="q1"><span>istanbul<br></span>
+<input type="radio" name="q1" id="a3correct"><span>Ankara<br></span>
+<input type="radio" name="q1"><span>mersin<br></span>
+<input type="radio" name="q1"><span>trabazon<br></span>
+<input type="button" value="submit answer" onclick="check3()">
+</form>
+
+<span id="answer3"></span>
+</div>
+
+
+<div>
+<h2>Question 4: for which country is this flag?</h2>
+
+<img border="0" src="peru.png" alt="Pulpit rock" width="304" height="228">
+<form name="question1">
+<input type="radio" name="q1"><span>argentine<br></span>
+<input type="radio" name="q1"><span>italy<br></span>
+<input type="radio" name="q1"><span>spain<br></span>
+<input type="radio" name="q1"id="a4correct"><span>peru<br></span>
+<input type="button" value="submit answer" onclick="check4()">
+</form>
+
+<span id="answer4"></span>
+</div>
+
+
+<div>
+<h2>Question 5: for which country is this flag?</h2>
+
+<img border="0" src="syria.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"id="a5correct"><span>Syria<br></span>
+<input type="radio" name="q1"><span>saudi arabia<br></span>
+<input type="radio" name="q1"><span>egypt<br></span>
+<input type="radio" name="q1"><span>iraq<br></span>
+<input type="button" value="submit answer" onclick="check5()">
+</form>
+
+<span id="answer5"></span>
+
+</div>
+
+<div>
+<h2>Question 6: what is the official language of uruguay?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>English<br></span>
+<input type="radio" name="q1"><span>german<br></span>
+<input type="radio" name="q1"><span>french<br></span>
+<input type="radio" name="q1"id="a6correct"><span>Spanish<br></span>
+<input type="button" value="submit answer" onclick="check6()">
+</form>
+
+<span id="answer6"></span>
+
+</div>
+
+
+<div>
+<h2>Question 7: what is a the longest mountain in the world?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"id="a7correct"><span>mount everest<br></span>
+<input type="radio" name="q1"><span>mount fuji <br></span>
+<input type="radio" name="q1"><span>mount olympus<br></span>
+<input type="radio" name="q1"><span>mount ararat<br></span>
+<input type="button" value="submit answer" onclick="check7()">
+</form>
+
+<span id="answer7"></span>
+
+</div>
+
+
+
+<div>
+<h2>Question 8: what is a continent?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"id="a8correct"><span>A large bdoy of mass surrounded by water<br></span>
+<input type="radio" name="q1"><span>large body of water surrounded by land <br></span>
+<input type="radio" name="q1"><span>land with peopel living on it<br></span>
+<input type="radio" name="q1"><span>any body of water<br></span>
+<input type="button" value="submit answer" onclick="check8()">
+</form>
+
+<span id="answer8"></span>
+
+</div>
+
+
+<div>
+<h2>Question 9: which one of these examples is continent?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>england<br></span>
+<input type="radio" name="q1"><span>france <br></span>
+<input type="radio" name="q1"id="a9correct"><span>north america<br></span>
+<input type="radio" name="q1"><span>germany<br></span>
+<input type="button" value="submit answer" onclick="check9()">
+</form>
+
+<span id="answer9"></span>
+
+</div>
+
+
+<div>
+<h2>Question 10: what is th longest river?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>Amazon river<br></span>
+<input type="radio" name="q1"id="a10correct"><span>Nile river<br></span>
+<input type="radio" name="q1"><span>Mississippi river<br></span>
+<input type="radio" name="q1"><span>yangtze<br></span>
+<input type="button" value="submit answer" onclick="check10()">
+</form>
+
+<span id="answer10"></span>
+
+</div>
+
+<h1>Score</h1>
+<p>Current score: <span id="score">0</span></p>
+
+
+
+
+
+
+
+
+
