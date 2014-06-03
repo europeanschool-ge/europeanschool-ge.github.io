@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html>
+
+<title>Guess That Country</title>
+
+<link rel="stylesheet" type="text/css" href="color.css">
+<h1>___________________________________Guess That Country___________________________________</h1>
+<script>
+
+var score = new Array;
+
+function showScore()
+{
+  var total=0;
+  for (i in score)
+  {
+    total+=score[i];
+  }
+  document.getElementById('score').innerHTML=total;
+
+}
+
+function check1()
+{
+  if(document.getElementById('a1correct').checked)
+ // if(document.question1["q1"]["correct"].checked)
+ // if(document.question1["q1"]["0"].checked)
+  {
+    document.getElementById('answer1').innerHTML="correct!";
+    score[0]=1;
+  }
+  else
+  {
+    document.getElementById('answer1').innerHTML="wrong!";
+    score[0]=0;
+  }    
+  showScore();
+}
+
+
+function check2()
+{
+  if(document.getElementById('a2correct').checked)
+  {
+    document.getElementById('answer2').innerHTML="correct!";
+    score[1]=1;
+  }
+  else
+  {
+    document.getElementById('answer2').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check3()
+{
+  if(document.getElementById('a3correct').checked)
+  {
+    document.getElementById('answer3').innerHTML="correct!";
+    score[2]=1;
+  }
+  else
+  {
+    document.getElementById('answer3').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check4()
+{
+  if(document.getElementById('a4correct').checked)
+  {
+    document.getElementById('answer4').innerHTML="correct!";
+    score[3]=1;
+  }
+  else
+  {
+    document.getElementById('answer4').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check5()
+{
+  if(document.getElementById('a5correct').checked)
+  {
+    document.getElementById('answer5').innerHTML="correct!";
+    score[4]=1;
+  }
+  else
+  {
+    document.getElementById('answer5').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check6()
+{
+  if(document.getElementById('a6correct').checked)
+  {
+    document.getElementById('answer6').innerHTML="correct!";
+    score[5]=1;
+  }
+  else
+  {
+    document.getElementById('answer6').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+</script>
+
+
+</head>
+
+<body background="background.jpg">
+
+<body>
+
+<h2>Question 1:What's the capital of Georgia?</h2>
+<h2>______________________________________<img border="0" src="pic.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Singapore</span><br>
+<input type="radio" name="q1" id="a1correct"><span>Tbilisi<br></span>
+<input type="radio" name="q1"><span>New York<br></span>
+<input type="radio" name="q1"><span>None of The Above<br><span>
+<input type="button" value="submit answer" onclick="check1()">
+</form>
+
+<span id="answer1"></span>
+
+
+
+<h2>Question 2:What country's capital is Amsterdam</h2>
+
+<h2>______________________________________<img border="0" src="pic1.jpg" alt="Pulpit rock" width="304" height="228">
+<form name="question1">
+<input type="radio" name="q1"><span>Korea<br></span>
+<input type="radio" name="q1"><span>Ukraine<br></span>
+<input type="radio" name="q1" id="a2correct"><span>Netherlands<br></span>
+<input type="radio" name="q1"><span>Estonia<br></span>
+<input type="button" value="submit answer" onclick="check2()">
+</form>
+
+<span id="answer2"></span>
+
+
+
+<h2>Question 3: What country is the most populated?</h2>
+
+<h2>______________________________________<img border="0" src="pic3.jpg" alt="Pulpit rock" width="304" height="228">
+<form name="question1">
+<input type="radio" name="q1"><span>Russia<br></span>
+<input type="radio" name="q1" id="a3correct"><span>China<br></span>
+<input type="radio" name="q1"><span>India<br></span>
+<input type="radio" name="q1"><span>Miley Cyrus<br></span>
+<input type="button" value="submit answer" onclick="check3()">
+</form>
+
+<span id="answer3"></span>
+
+
+
+<h2>Question 4: What is the world population?</h2>
+
+<h2>______________________________________<img border="0" src="pic2.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>6 milion<br></span>
+<input type="radio" name="q1"><span>7 milion<br></span>
+<input type="radio" name="q1"><span>6 Bilion<br></span>
+<input type="radio" name="q1"id="a4correct"><span>7 Bilion<br></span>
+<input type="button" value="submit answer" onclick="check4()">
+</form>
+
+<span id="answer4"></span>
+
+<h2>Question 5: What country is the biggest?</h2>
+
+<h2>______________________________________<img border="0" src="pic4.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"id="a5correct"><span>Russia<br></span>
+<input type="radio" name="q1"><span>Africa<br></span>
+<input type="radio" name="q1"><span>America<br></span>
+<input type="radio" name="q1"><span>China<br></span>
+<input type="button" value="submit answer" onclick="check5()">
+</form>
+
+<span id="answer5"></span>
+
+<h2>What region is Australia in?</h2>
+
+<h2>______________________________________<img border="0" src="pic5.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Asia<br></span>
+<input type="radio" name="q1"><span>I have no idea<br></span>
+<input type="radio" name="q1"><span>Africa<br></span>
+<input type="radio" name="q1"id="a6correct"><span>Oceania<br></span>
+<input type="button" value="submit answer" onclick="check6()">
+</form>
+
+<span id="answer6"></span>
+
+
+
+
+
+
+<h1>Score</h1>
+<p>Current score: <span id="score">0</span></
