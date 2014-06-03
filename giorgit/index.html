@@ -1,0 +1,295 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>smart quiz</title>
+
+<link rel="stylesheet" type="mathe.jpg" href="styledaquiz.css">
+<script>
+document.write("<h1>hey the smartsest children in the school!</h1>");
+</script>
+
+
+<script>
+
+var score = new Array;
+
+function showScore()
+{
+  var total=0;
+  for (i in score)
+  {
+    total+=score[i];
+  }
+  document.getElementById('score').innerHTML=total;
+
+}
+
+function check1()
+{
+  if(document.getElementById('a1correct').checked)
+ // if(document.question1["q1"]["correct"].checked)
+ // if(document.question1["q1"]["0"].checked)
+  {
+    document.getElementById('answer1').innerHTML="correct!";
+    score[0]=1;
+  }
+  else
+  {
+    document.getElementById('answer1').innerHTML="wrong!";
+    score[0]=0;
+  }    
+  showScore();
+}
+
+
+function check2()
+{
+  if(document.getElementById('a2correct').checked)
+  {
+    document.getElementById('answer2').innerHTML="correct!";
+    score[1]=1;
+  }
+  else
+  {
+    document.getElementById('answer2').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check3()
+{
+  if(document.getElementById('a3correct').checked)
+  {
+    document.getElementById('answer3').innerHTML="correct!";
+    score[2]=1;
+  }
+  else
+  {
+    document.getElementById('answer3').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check4()
+{
+  if(document.getElementById('a4correct').checked)
+  {
+    document.getElementById('answer4').innerHTML="correct!";
+    score[3]=1;
+  }
+  else
+  {
+    document.getElementById('answer4').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check5()
+{
+  if(document.getElementById('a5correct').checked)
+  {
+    document.getElementById('answer5').innerHTML="correct!";
+    score[4]=1;
+  }
+  else
+  {
+    document.getElementById('answer5').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check6()
+{
+  if(document.getElementById('a6correct').checked)
+  {
+    document.getElementById('answer6').innerHTML="correct!";
+    score[5]=1;
+  }
+  else
+  {
+    document.getElementById('answer6').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+</script>
+
+<style>
+
+div
+{
+margin:100px;
+padding:10px;
+background-color: rgba(255, 255, 255, 0.5);
+}
+
+</style>
+</head>
+
+<body background="armenia.jpg">
+
+<div>
+<h2>Question 1:how much is 3/5 + 2/5</h2>
+
+<img border="0" src="images.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>1/5</span><br>
+<input type="radio" name="q1" id="a1correct"><span>5/5<br></span>
+<input type="radio" name="q1"><span>2/5<br></span>
+<input type="radio" name="q1"><span>None of The Above<br><span>
+<input type="button" value="submit answer" onclick="check1()">
+</form>
+</div>
+<span id="answer1"></span>
+
+<div>
+
+<h2>Question 2:how much is o,7 + o,4</h2>
+
+<img border="0" src="maths love.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>1<br></span>
+<input type="radio" name="q1"><span>1,2<br></span>
+<input type="radio" name="q1" id="a2correct"><span>1,1<br></span>
+<input type="radio" name="q1"><span>o,3<br></span>
+<input type="button" value="submit answer" onclick="check2()">
+</form>
+</div>
+
+
+<span id="answer2"></span>
+
+<div>
+
+<h2>Question 3: if the height  of the rectangle is 3 and the length is 5, what would be the perimeter? </h2>
+
+<img border="0" src="matka.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>15<br></span>
+<input type="radio" name="q1" id="a3correct"><span>16<br></span>
+<input type="radio" name="q1"><span>8<br></span>
+<input type="radio" name="q1"><span>12<br></span>
+<input type="button" value="submit answer" onclick="check3()">
+</form>
+</div>
+<span id="answer3"></span>
+
+
+<div>
+<h2>Question 4: how much is o,2 X o,2 </h2>
+
+<img border="0" src="mate.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>0,4<br></span>
+<input type="radio" name="q1"><span>0,02<br></span>
+<input type="radio" name="q1"><span>0,2<br></span>
+<input type="radio" name="q1"id="a4correct"><span>0,04<br></span>
+<input type="button" value="submit answer" onclick="check4()">
+</form>
+</div>
+<span id="answer4"></span>
+<div>
+<h2>Question 5: how much is 5 : 0,5</h2>
+
+<img border="0" src="bichi.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"id="a5correct"><span>10<br></span>
+<input type="radio" name="q1"><span>2,5<br></span>
+<input type="radio" name="q1"><span>3<br></span>
+<input type="radio" name="q1"><span>2<br></span>
+<input type="button" value="submit answer" onclick="check5()">
+</form>
+</div>
+<span id="answer5"></span>
+<div>
+<h2>Question 6: how much is 3/5 X 2/5</h2>
+
+<img border="0" src="mari.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>5/5<br></span>
+<input type="radio" name="q1"><span>2/5<br></span>
+<input type="radio" name="q1"><span>3/5<br></span>
+<input type="radio" name="q1"id="a6correct"><span> 6/5 <br></span>
+<input type="button" value="submit answer" onclick="check6()">
+</form>
+</div>
+
+<span id="answer6"></span>
+
+
+
+
+
+
+<h1>Score</h1>
+<p>Current score: <span id="score">0</span></p>
+
+<p id="demo">
+Did You Like This Quiz?
+</p>
+
+
+<script>
+function myFunction()
+{
+x=document.getElementById("demo");  // Find the element
+x.innerHTML=" thank you so much ";    // Change the content
+}
+</script>
+
+
+
+
+<script>
+function myFunction1()
+{
+x=document.getElementById("demo");  // Find the element
+x.innerHTML=":( * whyyyyyyyy ?????*";    // Change the content
+}
+</script>
+
+
+
+
+<button type="button" onclick="myFunction()">Yea!</button>
+
+<button type="button" onclick="myFunction1()">Noooo!</button>
+
+
+
+
+
+
+
+
+</body>

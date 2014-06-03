@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>smart quiz</title>
+
+<link rel="stylesheet" type="text/css" href="styledaquiz.css">
+<script>
+document.write("<h1>hey the smartsest children in the school!</h1>");
+</script>
+
+
+<script>
+
+var score = new Array;
+
+function showScore()
+{
+  var total=0;
+  for (i in score)
+  {
+    total+=score[i];
+  }
+  document.getElementById('score').innerHTML=total;
+
+}
+
+function check1()
+{
+  if(document.getElementById('a1correct').checked)
+ // if(document.question1["q1"]["correct"].checked)
+ // if(document.question1["q1"]["0"].checked)
+  {
+    document.getElementById('answer1').innerHTML="correct!";
+    score[0]=1;
+  }
+  else
+  {
+    document.getElementById('answer1').innerHTML="wrong!";
+    score[0]=0;
+  }    
+  showScore();
+}
+
+
+function check2()
+{
+  if(document.getElementById('a2correct').checked)
+  {
+    document.getElementById('answer2').innerHTML="correct!";
+    score[1]=1;
+  }
+  else
+  {
+    document.getElementById('answer2').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check3()
+{
+  if(document.getElementById('a3correct').checked)
+  {
+    document.getElementById('answer3').innerHTML="correct!";
+    score[2]=1;
+  }
+  else
+  {
+    document.getElementById('answer3').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check4()
+{
+  if(document.getElementById('a4correct').checked)
+  {
+    document.getElementById('answer4').innerHTML="correct!";
+    score[3]=1;
+  }
+  else
+  {
+    document.getElementById('answer4').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check5()
+{
+  if(document.getElementById('a5correct').checked)
+  {
+    document.getElementById('answer5').innerHTML="correct!";
+    score[4]=1;
+  }
+  else
+  {
+    document.getElementById('answer5').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check6()
+{
+  if(document.getElementById('a6correct').checked)
+  {
+    document.getElementById('answer6').innerHTML="correct!";
+    score[5]=1;
+  }
+  else
+  {
+    document.getElementById('answer6').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+</script>
+
+
+
+</head>
+<body background="ffs.jpg">
+<body>
+
+<h2>Question 1:What is capital city of russia?</h2>
+
+<img border="0" src="PICTURE2.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>new york</span><br>
+<input type="radio" name="q1" id="a1correct"><span>moscow<br></span>
+<input type="radio" name="q1"><span>tbilisi<br></span>
+<input type="radio" name="q1"><span>None of The Above<br><span>
+<input type="button" value="submit answer" onclick="check1()">
+</form>
+
+<span id="answer1"></span>
+
+
+
+<h2>Question 2:What is longest river in the world?</h2>
+
+<img border="0" src="picture6.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>amazone river<br></span>
+<input type="radio" name="q1"><span>Yangtze River<br></span>
+<input type="radio" name="q1" id="a2correct"><span>nile river<br></span>
+<input type="radio" name="q1"><span>mtkvari<br></span>
+<input type="button" value="submit answer" onclick="check2()">
+</form>
+
+<span id="answer2"></span>
+
+
+
+<h2>Question 3: Which is most populated country in the world? </h2>
+
+<img border="0" src="PICTURE3.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1"> 
+<input type="radio" name="q1"><span>africa<br></span>
+<input type="radio" name="q1" id="a3correct"><span>china<br></span>
+<input type="radio" name="q1"><span>usa<br></span>
+<input type="radio" name="q1"><span>russia<br></span>
+<input type="button" value="submit answer" onclick="check3()">
+</form>
+
+<span id="answer3"></span>
+
+
+
+<h2>Question 4: Which is the biggest sea in the world? </h2>
+
+<img border="0" src="picture4.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Coral Sea<br></span>
+<input type="radio" name="q1"><span>Tasman Sea<br></span>
+<input type="radio" name="q1"><span>Bering Sea<br></span>
+<input type="radio" name="q1"id="a4correct"><span>Philipine Sea<br></span>
+<input type="button" value="submit answer" onclick="check4()">
+</form>
+
+<span id="answer4"></span>
+
+<h2>Question 5: Which is the biggest volcano?</h2>
+
+<img border="0" src="PICTUREN1.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"id="a5correct"><span>Tambora<br></span>
+<input type="radio" name="q1"><span>Krakatoa <br></span>
+<input type="radio" name="q1"><span>Unzen,<br></span>
+<input type="radio" name="q1"><span>El Chichon<br></span>
+<input type="button" value="submit answer" onclick="check5()">
+</form>
+
+<span id="answer5"></span>
+
+<h2>Question 6: Which is the smallest country in the world?</h2>
+
+<img border="0" src="picture5.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Tuvalu<br></span>
+<input type="radio" name="q1"><span>Nauru<br></span>
+<input type="radio" name="q1"><span>Monaco<br></span>
+<input type="radio" name="q1"id="a6correct"><span> Vatican city <br></span>
+<input type="button" value="submit answer" onclick="check6()">
+</form>
+
+<span id="answer6"></span>
+
+
+
+
+
+
+<h1>Score</h1>
+<p>Current score: <span id="score">0</span></p>
+
+<p id="demo">
+Did You Like This Quiz?
+</p>
+
+
+<script>
+function myFunction()
+{
+x=document.getElementById("demo");  // Find the element
+x.innerHTML="thank you ";    // Change the content
+}
+</script>
+
+
+
+
+<script>
+function myFunction1()
+{
+x=document.getElementById("demo");  // Find the element
+x.innerHTML=":( *shit*";    // Change the content
+}
+</script>
+
+
+
+
+<button type="button" onclick="myFunction()">Yea!</button>
+
+<button type="button" onclick="myFunction1()">No!</button>
+
+
+
+
+
+
+
+
+</body>
