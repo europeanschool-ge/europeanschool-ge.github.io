@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>SAVE NATURE!</title>
+
+<link rel="stylesheet" type="text/css" href="Ana2.css">
+
+<div>
+<script>
+document.write("<h1>We are the part of our envrionnment! Let's see how well you can take care of OUR nature!</h1>");
+</script>
+</div>
+
+
+
+<script>
+
+
+
+var score = new Array;
+
+function showScore()
+{
+  var total=0;
+  for (i in score)
+  {
+    total+=score[i];
+  }
+  document.getElementById('score').innerHTML=total;
+
+}
+
+function check1()
+{
+  if(document.getElementById('a1correct').checked)
+ // if(document.question1["q1"]["correct"].checked)
+ // if(document.question1["q1"]["0"].checked)
+  {
+    document.getElementById('answer1').innerHTML="RIGHT! Good job! ";
+    score[0]=1;
+  }
+  else
+  {
+    document.getElementById('answer1').innerHTML="Wrong!";
+    score[0]=0;
+  }    
+  showScore();
+}
+
+
+function check2()
+{
+  if(document.getElementById('a2correct').checked)
+  {
+    document.getElementById('answer2').innerHTML="RIGHT! Good job!";
+    score[1]=1;
+  }
+  else
+  {
+    document.getElementById('answer2').innerHTML="Wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check3()
+{
+  if(document.getElementById('a3correct').checked)
+  {
+    document.getElementById('answer3').innerHTML="RIGHT! Good job!";
+    score[2]=1;
+  }
+  else
+  {
+    document.getElementById('answer3').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check4()
+{
+  if(document.getElementById('a4correct').checked)
+  {
+    document.getElementById('answer4').innerHTML="RIGHT! Good job!";
+    score[3]=1;
+  }
+  else
+  {
+    document.getElementById('answer4').innerHTML="Wrong!:(";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check5()
+{
+  if(document.getElementById('a5correct').checked)
+  {
+    document.getElementById('answer5').innerHTML="RIGHT! good job !";
+    score[4]=1;
+  }
+  else
+  {
+    document.getElementById('answer5').innerHTML="Wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check6()
+{
+  if(document.getElementById('a6correct').checked)
+  {
+    document.getElementById('answer6').innerHTML="RIGHT! good job";
+    score[5]=1;
+  }
+  else
+  {
+    document.getElementById('answer6').innerHTML="Wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+</script>
+
+
+
+</head>
+<body>
+
+
+<div>
+<h2>Question 1:(Soil contamination)imagine you are walking in the street and you just finished eating your candies, where do you put the package if you see no rubbish bin?</h2>
+
+<img border="0" src="n.jpg" alt="Pulpit rock" width="400" height="400">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Throw it on the road </span><br>
+<input type="radio" name="q1" id="a1correct"><span>Put it in your pocket and throw it away when you see a nearby rubbish bin</span><br>
+
+<input type="radio" name="q1"><span>Throw it somewhere unnoticeable</span><br>
+<input type="button" value="submit answer" onclick="check1()">
+</form>
+
+<span id="answer1"></span>
+
+</div>
+
+<div>
+<h2>Question 2: (Energy saving)You are alone at home and all the lights in the house are turned on. you need lights only in your room. you:</h2>
+
+<img border="0" src="a.jpg" alt="Pulpit rock" width="400" height="400">
+
+<form name="question1">
+<input type="radio" name="q1"><span>you don't do anything and keep the lights on<br></span>
+
+<input type="radio" name="q1"><span>you turn on more lights.<br></span>
+
+<input type="radio" name="q1" id="a2correct"><span>you turn off the lights in the rooms which you don't need<br></span>
+
+<input type="button" value="submit answer" onclick="check2()">
+</form>
+
+<span id="answer2"></span>
+</div>
+
+
+
+<div>
+<h2>Question 3: (air and water pollution)Parents tell you to go to a shop and buy food you:(which one is safer for nature)</h2>
+
+<img border="0" src="t.jpg" alt="Pulpit rock" width="400" height="400">
+
+<form name="question1">
+<input type="radio" name="q1"><span>bring free cellophane (which produces poisenous gasses when heated and is not recycled easily)<br></span>
+
+<input type="radio" name="q1" id="a3correct"><span>put food in the bag, which can be used many times.<br></span>
+
+<input type="radio" name="q1"><span>put food in the paper bag (which is made from trees)<br></span>
+
+<input type="button" value="submit answer" onclick="check3()">
+</form>
+
+<span id="answer3"></span>
+</div>
+
+
+<div>
+<h2>Question 4:(Animals)You are in the zoo, watching at animals. You notice one of the animals watching your food with hungry look. You:</h2>
+
+<img border="0" src="u.jpg" alt="Pulpit rock" width="400" height="400">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Give the food to the animal<br></span>
+
+<input type="radio" name="q1"><span>Hit the animal and say: You won't get anything, you dirty beast!<br></span>
+
+<input type="radio" name="q1"id="a4correct"><span>Check if it is allowed to give that kind of food to that animal specie and only in that case give it to the animal.<br></span>
+
+<input type="button" value="submit answer" onclick="check4()">
+</form>
+
+<span id="answer4"></span>
+</div>
+
+
+<div>
+<h2>Question 5:(Recycling)You want to throw away the bottle and you see many bins in the street, all of them have different inscription, you:</h2>
+
+<img border="0" src="r.jpg" alt="Pulpit rock" width="400" height="400">
+
+<form name="question1">
+<input type="radio" name="q1"id="a5correct"><span>Read the prescription and throw the bottle in the bin which says "plastics"<br></span>
+
+<input type="radio" name="q1"><span>Don't read inscription and throw bottle in the bin you want.<br></span>
+
+<input type="radio" name="q1"><span>throw the bottle in the street<br></span>
+
+
+<input type="button" value="submit answer" onclick="check5()">
+</form>
+
+<span id="answer5"></span>
+
+</div>
+
+<div>
+<h2>Question 6:(Water saving)You are washing your teeth and water from the tap is flowing</h2>
+
+<img border="0" src="e.jpg" alt="Pulpit rock" width="400" height="400">
+
+<form name="question1">
+<input type="radio" name="q1"><span>you wash your teeth without any water.<br></span>
+<input type="radio" name="q1"><span>you let water flow from the tap<br></span>
+<input type="radio" name="q1"id="a6correct"><span>you stop the water flow until you need to wash your mouth<br></span>
+<input type="button" value="submit answer" onclick="check6()">
+</form>
+
+<span id="answer6"></span>
+
+</div>
+
+
+
+
+<h1>Score</h1>
+<p>Current score: <span id="score">0</span></p>
+
+<p id="demo">
+Thank you for doing the quiz! I hope in the future you will learn more about saving energy,water,recycling,keeping animals healthy and many other issues connected to saving our beautiful and precious nature! :) If you liked the quiz and want to do more of these kind of quiz contact me on email: Angotsiridze@yahoo.com. Did you like it?
+</p>
+
+
+<script>
+function myFunction()
+{
+x=document.getElementById("demo");  // Find the element
+x.innerHTML="THANKS!! yaaaay";    // Change the content
+}
+</script>
+
+
+
+
+<script>
+function myFunction1()
+{
+x=document.getElementById("demo");  // Find the element
+x.innerHTML="Its okay I'll try to do better next time :')";    // Change the content
+}
+</script>
+
+
+
+
+<button type="button" onclick="myFunction()">YES!:) </button>
+
+<button type="button" onclick="myFunction1()">NO!:( </button>
+
+
+
+
+
+
+
+
+</body>
+
+

@@ -1,0 +1,48 @@
+﻿body
+{
+background-image:url("green.jpg");
+}
+
+div
+{
+margin:100px;
+padding:10px;
+background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+
+h1
+{
+color:blue;
+text-align:left;
+font-family:"Kristen ITC";
+font-size:35px;
+}
+p
+{
+font-family:"Kristen ITC";
+font-size:30px;
+}
+input
+{
+font-family:"Kristen ITC";
+font-size:30px;
+}
+h2
+{
+color:blue;
+text-align:left;
+font-family:"Kristen ITC";
+font-size:30px;
+}
+span
+{
+color:blue;
+text-align:left;
+font-family:"Kristen ITC";
+font-size:30px;
+}

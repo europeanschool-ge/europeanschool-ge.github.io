@@ -1,0 +1,102 @@
+﻿<html><head><title></title>
+<script language="JavaScript">
+<!--
+
+var numQues = 5;
+
+var answers = new Array(5);
+answers[0] = "Tbilisi";
+answers[1] = "Paris";
+answers[2] = "Viena";
+answers[3] = "Washington";
+answers[4] = "no yes";
+
+function getScore(form) {
+  var score = 0;
+  var currElt;
+  var currSelection;
+
+  for (i=0; i<numQues; i++) {
+    currElt = form.elements[i];
+    currSelection = currElt.selectedIndex;
+    if (currElt.options[currSelection].value == answers[i]) {
+      score++;
+    }
+  }
+
+  score = Math.round(score/numQues*100);
+  form.percentage.value = score + "%";
+
+  var correctAnswers = "";
+  for (i=1; i<=numQues; i++) {
+    correctAnswers += i + ". " + answers[i-1] + "\r\n";
+  }
+  form.solutions.value = correctAnswers;
+
+}
+
+// -->
+</script>
+</head>
+
+<body>
+
+<form name="quiz">
+1. What is the capital of Georgia?<br>
+<select name="q1">
+<option value="">choose one
+<option value="Paris">Paris
+<option value="Tbilisi">Tbilisi
+<option value="Seul">Seul
+<option value="Sofia">Sofia
+</select>
+<p>
+
+2. What is the capital of France?<br>
+<select name="q2">
+<option value="">choose one
+<option value="Japan">Japan
+<option value="Paris">Paris
+<option value="Tbilisi">Tbilisi
+<option value="Astana">Astana
+</select>
+<p>
+
+3. What is Capital of Austria? <br>
+<select name="q3">
+<option value="">choose one
+<option value="Paris">Paris
+<option value="zugdidi">zugdidi
+<option value="Viena">Viena
+<option value="Berlin">Berlin
+</select>
+<p>
+
+4. What is  Capital of USA?<br>
+<select name="q4">
+<option value="">choose one
+<option value="New York">New York
+<option value="Washington">Washington
+<option value="Paris">Paris
+<option value="kutaisi">kutaisi
+</select>
+<p>
+
+5. Did you like this Quiz?<br>
+<select name="q5">
+<option value="">choose one
+<option value="yes">yes
+<option value="No">No
+<option value="no yes">no yes
+<option value="Not bad">Not bad
+</select>
+<p>
+
+<input type="button" value="Get score" onClick="getScore(this.form)">
+<input type="reset" value="Clear"><p>
+Score = <input type=text size=15 name="percentage"><br>
+Correct answers:<br>
+<textarea name="solutions" wrap="virtual" rows="4" cols="40"></textarea>
+</form>
+
+</body></html>

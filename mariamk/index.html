@@ -1,0 +1,312 @@
+﻿
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>MAGNETS</title>
+
+<center><a href="http://tinypic.com?ref=2eb7ho2" target="_blank"><img src="http://i59.tinypic.com/2eb7ho2.png" border="0" alt="Image and video hosting by TinyPic"></a></center>
+
+<link rel="stylesheet" type="text/css" href="quizzy.css">
+
+<div>
+<script>
+document.write("");
+</script>
+</div>
+
+
+
+<script>
+
+
+
+var score = new Array;
+
+function showScore()
+{
+  var total=0;
+  for (i in score)
+  {
+    total+=score[i];
+  }
+  document.getElementById('score').innerHTML=total;
+
+}
+
+function check1()
+{
+  if(document.getElementById('a1correct').checked)
+ // if(document.question1["q1"]["correct"].checked)
+ // if(document.question1["q1"]["0"].checked)
+  {
+    document.getElementById('answer1').innerHTML="You're correct!";
+    score[0]=1;
+  }
+  else
+  {
+    document.getElementById('answer1').innerHTML="You're wrong!";
+    score[0]=0;
+  }    
+  showScore();
+}
+
+
+function check2()
+{
+  if(document.getElementById('a2correct').checked)
+  {
+    document.getElementById('answer2').innerHTML="You're correct!";
+    score[1]=1;
+  }
+  else
+  {
+    document.getElementById('answer2').innerHTML="You're wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check3()
+{
+  if(document.getElementById('a3correct').checked)
+  {
+    document.getElementById('answer3').innerHTML="You're correct!";
+    score[2]=1;
+  }
+  else
+  {
+    document.getElementById('answer3').innerHTML="You're wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check4()
+{
+  if(document.getElementById('a4correct').checked)
+  {
+    document.getElementById('answer4').innerHTML="You're correct!";
+    score[3]=1;
+  }
+  else
+  {
+    document.getElementById('answer4').innerHTML="You're wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check5()
+{
+  if(document.getElementById('a5correct').checked)
+  {
+    document.getElementById('answer5').innerHTML="You're correct!";
+    score[4]=1;
+  }
+  else
+  {
+    document.getElementById('answer5').innerHTML="You're wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check6()
+{
+  if(document.getElementById('a6correct').checked)
+  {
+    document.getElementById('answer6').innerHTML="You're correct!";
+    score[5]=1;
+  }
+  else
+  {
+    document.getElementById('answer6').innerHTML="You're wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+function check7()
+{
+  if(document.getElementById('a7correct').checked)
+  {
+    document.getElementById('answer7').innerHTML="You're correct!";
+    score[6]=1;
+  }
+  else
+  {
+    document.getElementById('answer7').innerHTML="You're wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check8()
+{
+  if(document.getElementById('a8correct').checked)
+  {
+    document.getElementById('answer8').innerHTML="You're correct!";
+    score[7]=1;
+  }
+  else
+  {
+    document.getElementById('answer8').innerHTML="You're wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+
+</script>
+
+
+
+
+<body>
+<center>
+
+
+<div>
+<h2>Who came up with the name "magnet"?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>Chinese</span><br>
+<input type="radio" name="q1" id="a1correct"><span>Greek<br></span>
+<input type="radio" name="q1"><span>Italians<br></span>
+<input type="button" value="submit answer" onclick="check1()">
+</form>
+
+<span id="answer1"></span>
+
+</div>
+
+<div>
+<h2>Magnets are:</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>A part of the force field <br></span>
+<input type="radio" name="q1"><span>Used in chemistry<br></span>
+<input type="radio" name="q1" id="a2correct"><span>Objects that create a magnetic field<br></span>
+<input type="button" value="submit answer" onclick="check2()">
+</form>
+
+<span id="answer2"></span>
+</div>
+
+
+
+<div>
+<h2>Which of those are types of magnets?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>Constructive and destructive<br></span>
+<input type="radio" name="q1" id="a3correct"><span>Permanent and Temporary<br></span>
+<input type="radio" name="q1"><span>Solid and Fluid<br></span>
+<input type="button" value="submit answer" onclick="check3()">
+</form>
+
+<span id="answer3"></span>
+</div>
+
+
+<div>
+<h2>How many poles do magnets have?</h2>
+
+<form name="question1">
+<input type="radio" name="q1"><span>4<br></span>
+<input type="radio" name="q1"><span>5<br></span>
+<input type="radio" name="q1"id="a4correct"><span>2<br></span>
+<input type="button" value="submit answer" onclick="check4()">
+</form>
+
+<span id="answer4"></span>
+</div>
+
+
+<div>
+<h2>If you push magnets away from each other they:</h2>
+
+<form name="question1">
+<input type="radio" name="q1"id="a5correct"><span>Repel<br></span>
+<input type="radio" name="q1"><span>Attract<br></span>
+<input type="radio" name="q1"><span>Nothing happens<br></span>
+<input type="button" value="submit answer" onclick="check5()">
+</form>
+
+<span id="answer5"></span>
+
+</div>
+
+<div>
+<h2>The poles of a magnet are called:</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>West pole and East pole<br></span>
+<input type="radio" name="q1"><span>South pole and East pole<br></span>
+<input type="radio" name="q1"id="a6correct"><span>South pole and North Pole<br></span>
+<input type="button" value="submit answer" onclick="check6()">
+</form>
+
+<span id="answer6"></span>
+
+</div>
+
+
+<div>
+<h2>The amount of push and pull a magnet has is:</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>North<br></span>
+<input type="radio" name="q1"><span>Temporary<br></span>
+<input type="radio" name="q1"id="a7correct"><span>Force<br></span>
+<input type="button" value="submit answer" onclick="check7()">
+</form>
+
+<span id="answer7"></span>
+
+</div>
+
+<div>
+<h2>Magnets are used in:</h2>
+
+<form name="question1">
+<input type="radio" name="q1"><span>Pens<br></span>
+<input type="radio" name="q1"><span>Microwaves<br></span>
+<input type="radio" name="q1"id="a8correct"><span>TVs<br></span>
+<input type="button" value="submit answer" onclick="check8()">
+</form>
+
+<span id="answer8"></span>
+
+</div>
+
+
+
+<h1>Score</h1>
+<p>Current score out of 8: <span id="score">0</span></p>
+
+</center>
+</body>
+

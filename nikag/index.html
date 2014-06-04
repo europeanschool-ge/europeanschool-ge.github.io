@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html>
+
+<title>!Gozal's Quiz!</title>
+
+<link rel="stylesheet" type="text/css" href="color22.css">
+<h1> What Do You Know?</h1>
+<script>
+
+var score = new Array;
+
+function showScore()
+{
+  var total=0;
+  for (i in score)
+  {
+    total+=score[i];
+  }
+  document.getElementById('score').innerHTML=total;
+
+}
+
+function check1()
+{
+  if(document.getElementById('a1correct').checked)
+ // if(document.question1["q1"]["correct"].checked)
+ // if(document.question1["q1"]["0"].checked)
+  {
+    document.getElementById('answer1').innerHTML="Correct!";
+    score[0]=1;
+  }
+  else
+  {
+    document.getElementById('answer1').innerHTML="Incorrect! Try Again";
+    score[0]=0;
+  }    
+  showScore();
+}
+
+
+function check2()
+{
+  if(document.getElementById('a2correct').checked)
+  {
+    document.getElementById('answer2').innerHTML="Very Good";
+    score[1]=1;
+  }
+  else
+  {
+    document.getElementById('answer2').innerHTML="Not Correct :(";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check3()
+{
+  if(document.getElementById('a3correct').checked)
+  {
+    document.getElementById('answer3').innerHTML="Oh, very nice. It was correct";
+    score[2]=1;
+  }
+  else
+  {
+    document.getElementById('answer3').innerHTML="Incorrect. Think again";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check4()
+{
+  if(document.getElementById('a4correct').checked)
+  {
+    document.getElementById('answer4').innerHTML="Quite good... Do the next one ;)";
+    score[3]=1;
+  }
+  else
+  {
+    document.getElementById('answer4').innerHTML="No :(";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check5()
+{
+  if(document.getElementById('a5correct').checked)
+  {
+    document.getElementById('answer5').innerHTML="Great!";
+    score[4]=1;
+  }
+  else
+  {
+    document.getElementById('answer5').innerHTML="Incorrect :(";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check6()
+{
+  if(document.getElementById('a6correct').checked)
+  {
+    document.getElementById('answer6').innerHTML="Very good! You're quite Smart";
+    score[5]=1;
+  }
+  else
+  {
+    document.getElementById('answer6').innerHTML="Oh, it was Wrong :(";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check7()
+{
+  if(document.getElementById('a7correct').checked)
+{
+    document.getElementById('answer7').innerHTML="Incredible! It's right!";
+    score[6]=1;
+  }
+  else
+  {
+    document.getElementById('answer7').innerHTML="Oh Try again...";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+</script>
+
+</head>
+
+<body background="yui.jpg">
+<body>
+
+<h2>Question 1: Which reptiles camouflage themselves by changing colour? </h2>
+
+<img border="0" src="Cham.jpg" alt="Pulpit rock" width="304" height="304">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Lizards</span><br>
+<input type="radio" name="q1" id="a1correct"><span>Chameleons<br></span>
+<input type="radio" name="q1"><span>Iguana<br></span>
+<input type="radio" name="q1"><span>Crocodiles<br><span>
+<input type="button" value="submit answer" onclick="check1()">
+</form>
+
+<span id="answer1"></span>
+
+
+
+<h2>Question 2:How many colours are in a rainbow?</h2>
+
+<img border="0" src="Rainbow.jpg" alt="Pulpit rock" width="304" height="304">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Twenty<br></span>
+<input type="radio" name="q1"><span>Eight<br></span>
+<input type="radio" name="q1" id="a2correct"><span>Seven<br></span>
+<input type="radio" name="q1"><span>Fifty<br></span>
+<input type="button" value="submit answer" onclick="check2()">
+</form>
+
+<span id="answer2"></span>
+
+
+
+<h2>Question 3: How many people do you think live on this planet?</h2>
+
+<img border="0" src="Earth.jpg" alt="Pulpit rock" width="304" height="304">
+
+<form name="question1">
+<input type="radio" name="q1"><span>7 million<br></span>
+<input type="radio" name="q1" id="a3correct"><span>7 billion<br></span>
+<input type="radio" name="q1"><span>100 billion<br></span>
+<input type="radio" name="q1"><span>5 billion<br></span>
+<input type="button" value="submit answer" onclick="check3()">
+</form>
+
+<span id="answer3"></span>
+
+
+
+<h2>Question 4: Singer Justin Bieber was born in which country? </h2>
+
+<img border="0" src="Justin.jpg" alt="Pulpit rock" width="400" height="300">
+
+<form name="question1">
+<input type="radio" name="q1"><span>United States Of America<br></span>
+<input type="radio" name="q1"><span>United Kingdom<br></span>
+<input type="radio" name="q1"><span>Germany<br></span>
+<input type="radio" name="q1"id="a4correct"><span>Canada<br></span>
+<input type="button" value="submit answer" onclick="check4()">
+</form>
+
+<span id="answer4"></span>
+
+<h2>Question 5: The Eiffel Tower is in which European city?</h2>
+
+<img border="0" src="Eiffel.jpg" alt="Pulpit rock" width="300" height="500">
+
+<form name="question1">
+<input type="radio" name="q1"id="a5correct"><span>Paris<br></span>
+<input type="radio" name="q1"><span>Moscow<br></span>
+<input type="radio" name="q1"><span>Las Vegas<br></span>
+<input type="radio" name="q1"><span>Barcelona<br></span>
+<input type="button" value="submit answer" onclick="check5()">
+</form>
+
+<span id="answer5"></span>
+
+<h2>Question 6: Soave wine is produced in which country?</h2>
+
+<img border="0" src="Soave.png" alt="Pulpit rock" width="200" height="350">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Russia<br></span>
+<input type="radio" name="q1"><span>Australia<br></span>
+<input type="radio" name="q1"><span>France<br></span>
+<input type="radio" name="q1"id="a6correct"><span>Italy<br></span>
+<input type="button" value="submit answer" onclick="check6()">
+</form>
+
+<span id="answer6"></span>
+
+<h2>Question 7: Which motorcycle company introduced the Jet Ski in 1972?</h2>
+
+<img border="0" src="Jetski.gif" alt="Pulpit rock" width="304" height="228"><br>
+
+
+<input type="radio" name="q1"><span>Yamaha<br></span>
+<input type="radio" name="q1"><span>BMW<br></span>
+<input type="radio" name="q1"id="a7correct"><span>Kawasaki<br></span>
+<input type="radio" name="q1"><span>Ducati<br></span>
+<input type="button" value="submit answer" onclick="check7()">
+</form>
+
+<span id="answer7"></span>
+
+
+
+
+
+
+<h1>Score</h1>
+<p>Current score: <span id="score">0</span>
+
+
+
+
+
+
+

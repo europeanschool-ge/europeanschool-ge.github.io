@@ -1,0 +1,317 @@
+﻿c<!DOCTYPE html> <html> <head> <title>General Knowledge Quiz </title> <link rel="stylesheet" type="text/css" href="styledaquiz.css"> <div> <script> document.write("<h1>Welcome to the General Knowledge Quiz! </h1>"); </script> </div> <script> var score = new Array; function showScore() { var total=0; for (i in score) { total+=score[i]; } document.getElementById('score').innerHTML=total; } function check<!DOCTYPE html>
+<html>
+
+<head>
+<title>General Knowledge Quiz</title>
+
+<link rel="stylesheet" type="text/css" href="George1.css">
+
+
+
+<div>
+<script>
+document.write("<h1>Hey There! Welcome to the General Knowledge Quiz!!</h1>");
+</script>
+</div>
+
+
+
+<script>
+
+
+
+var score = new Array;
+
+function showScore()
+{
+  var total=0;
+  for (i in score)
+  {
+    total+=score[i];
+  }
+  document.getElementById('score').innerHTML=total;
+
+}
+
+function check1()
+{
+  if(document.getElementById('a1correct').checked)
+ // if(document.question1["q1"]["correct"].checked)
+ // if(document.question1["q1"]["0"].checked)
+  {
+    document.getElementById('answer1').innerHTML="correct!";
+    score[0]=1;
+  }
+  else
+  {
+    document.getElementById('answer1').innerHTML="wrong!";
+    score[0]=0;
+  }    
+  showScore();
+}
+
+
+function check2()
+{
+  if(document.getElementById('a2correct').checked)
+  {
+    document.getElementById('answer2').innerHTML="correct!";
+    score[1]=1;
+  }
+  else
+  {
+    document.getElementById('answer2').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check3()
+{
+  if(document.getElementById('a3correct').checked)
+  {
+    document.getElementById('answer3').innerHTML="correct!";
+    score[2]=1;
+  }
+  else
+  {
+    document.getElementById('answer3').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check4()
+{
+  if(document.getElementById('a4correct').checked)
+  {
+    document.getElementById('answer4').innerHTML="correct!";
+    score[3]=1;
+  }
+  else
+  {
+    document.getElementById('answer4').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check5()
+{
+  if(document.getElementById('a5correct').checked)
+  {
+    document.getElementById('answer5').innerHTML="correct!";
+    score[4]=1;
+  }
+  else
+  {
+    document.getElementById('answer5').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check6()
+{
+  if(document.getElementById('a6correct').checked)
+  {
+    document.getElementById('answer6').innerHTML="correct!";
+    score[5]=1;
+  }
+  else
+  {
+    document.getElementById('answer6').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+</script>
+
+
+
+</head>
+<body>
+
+
+<div>
+<h2>Question 1:Hades is god of what ?</h2>
+
+<img border="0" src="http://api.ning.com/files/PHKC1AOWfhyBsNPJdqxwfRENyIrlzDH3ntZCXuImnSoZFzKmqpeTWuSmGTl-X2JL2ScP*QJTNuBLfF5ncbuNWbkMsXCW5kIU/Hades.jpg" alt="" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>music</span><br>
+<input type="radio" name="q1" id="a1correct"><span>Death<br></span>
+<input type="radio" name="q1"><span>money<br></span>
+<input type="radio" name="q1"><span>None of The Above<br><span>
+<input type="button" value="submit answer" onclick="check1()">
+</form>
+
+<span id="answer1"></span>
+
+</div>
+
+<div>
+<h2>Question 2:What is name of God of music </h2>
+
+<img border="0" src="http://th04.deviantart.net/fs71/PRE/f/2013/197/0/e/smite__apollo_by_holycrush-d6drt8c.png" alt="" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Ares<br></span>
+<input type="radio" name="q1"><span>Zeus<br></span>
+<input type="radio" name="q1" id="a2correct"><span>Apolo<br></span>
+<input type="radio" name="q1"><span>Kali<br></span>
+<input type="button" value="submit answer" onclick="check2()">
+</form>
+
+<span id="answer2"></span>
+</div>
+
+
+
+<div>
+<h2>Question 3: Dimond is made from coal? </h2>
+
+<img border="0" src="http://i.livescience.com/images/i/000/060/492/iFF/diamonds.jpg?1387384113" alt="" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>True<br></span>
+<input type="radio" name="q1" id="a3correct"><span>False <br></span>
+<input type="radio" name="q1"><span>Maybe<br></span>
+<input type="radio" name="q1"><span>None above <br></span>
+<input type="button" value="submit answer" onclick="check3()">
+</form>
+
+<span id="answer3"></span>
+</div>
+
+
+<div>
+<h2>Question 4:  Solve (10+20):2+40+100=?</h2>
+
+<img border="0" src="http://politic365.com/wp-content/blogs.dir/1/files/2013/04/math_34-602x404.png" alt="" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>150<br></span>
+<input type="radio" name="q1"><span>32<br></span>
+<input type="radio" name="q1"><span>-5°<br></span>
+<input type="radio" name="q1"id="a4correct"><span>155<br></span>
+<input type="button" value="submit answer" onclick="check4()">
+</form>
+
+<span id="answer4"></span>
+</div>
+
+
+<div>
+<h2>Question 5: Which animal has biggest heart?</h2>
+
+<img border="0" src="http://www.coffscoast.com.au/sites/coffscoast.com.au/files/whale-1.jpg" alt="" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"id="a5correct"><span>Whale<br></span>
+<input type="radio" name="q1"><span>Dog<br></span>
+<input type="radio" name="q1"><span>Elephant<br></span>
+<input type="radio" name="q1"><span>Lion<br></span>
+<input type="button" value="submit answer" onclick="check5()">
+</form>
+
+<span id="answer5"></span>
+
+</div>
+
+<div>
+<h2>Question 6: last question: Is a Luschs a mammal?</h2>
+
+<img border="0" src="http://npb.jamescook.nu/wp-content/uploads/2007/02/npb_0198_luchs.jpg" alt="" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>No<br></span>
+<input type="radio" name="q1"><span>Maybe<br></span>
+<input type="radio" name="q1"><span>No it's a reptile<br></span>
+<input type="radio" name="q1"id="a6correct"><span>Yes it's a mammal<br></span>
+<input type="button" value="submit answer" onclick="check6()">
+</form>
+
+<span id="answer6"></span>
+
+</div>
+
+
+
+<div>
+<h1>Score</h1>
+<p>Current score: <span id="score">0</span></p>
+</div>
+
+
+<p id="demo">
+Did You Like This Quiz?
+</p>
+
+
+<script>
+function myFunction()
+{
+x=document.getElementById("demo");  // Find the element
+x.innerHTML="Nice";    // Change the content
+}
+</script>
+
+
+
+
+<script>
+function myFunction1()
+{
+x=document.getElementById("demo");  // Find the element
+x.innerHTML=":( Sorry";    // Change the content
+}
+</script>
+
+
+
+
+<button type="button" onclick="myFunction()">Yea!</button>
+
+<button type="button" onclick="myFunction1()">Noooo!</button>
+
+
+
+
+
+
+</body>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body
+{
+background-image:url("http://www.highlightpress.com/wp-content/uploads/2013/05/file00022124881.jpg");
+}
+div
+{
+margin:120px;
+padding:10px;
+background-color: rgba(255, 255, 255, 0.5);
+}
+</style>
+</head>
+<body>
+
+

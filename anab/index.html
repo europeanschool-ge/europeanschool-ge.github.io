@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+
+body
+{
+background-image:url("http://nataliapiskova.org.ua/wp-content/uploads/2013/11/outer-space-1920x1200-hd-wallpaper.jpg");
+} 
+div
+{
+margin:100px;
+padding:25px;
+background-color: rgba(255, 255, 255, 0.5);
+} 
+</style>
+
+<h1 style="color:#FFF0F5;margin-left:320px;">THE SOLAR SYSTEM</h1>
+<h1 style="color:#FFF0F5;margin-left:400px;">PYP Quiz</h1>
+
+<script>
+
+
+
+var score = new Array;
+
+function showScore()
+{
+  var total=0;
+  for (i in score)
+  {
+    total+=score[i];
+  }
+  document.getElementById('score').innerHTML=total;
+
+}
+
+function check1()
+{
+  if(document.getElementById('a1correct').checked)
+ // if(document.question1["q1"]["correct"].checked)
+ // if(document.question1["q1"]["0"].checked)
+  {
+    document.getElementById('answer1').innerHTML="correct!";
+    score[0]=1;
+  }
+  else
+  {
+    document.getElementById('answer1').innerHTML="wrong!";
+    score[0]=0;
+  }    
+  showScore();
+}
+
+
+function check2()
+{
+  if(document.getElementById('a2correct').checked)
+  {
+    document.getElementById('answer2').innerHTML="correct!";
+    score[1]=1;
+  }
+  else
+  {
+    document.getElementById('answer2').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check3()
+{
+  if(document.getElementById('a3correct').checked)
+  {
+    document.getElementById('answer3').innerHTML="correct!";
+    score[2]=1;
+  }
+  else
+  {
+    document.getElementById('answer3').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check4()
+{
+  if(document.getElementById('a4correct').checked)
+  {
+    document.getElementById('answer4').innerHTML="correct!";
+    score[3]=1;
+  }
+  else
+  {
+    document.getElementById('answer4').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check5()
+{
+  if(document.getElementById('a5correct').checked)
+  {
+    document.getElementById('answer5').innerHTML="correct!";
+    score[4]=1;
+  }
+  else
+  {
+    document.getElementById('answer5').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check6()
+{
+  if(document.getElementById('a6correct').checked)
+  {
+    document.getElementById('answer6').innerHTML="correct!";
+    score[5]=1;
+  }
+  else
+  {
+    document.getElementById('answer6').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+</script>
+
+
+
+</head>
+<body>
+
+<div>
+<h2>Question 1:What the Sun is?</h2>
+
+<form name="question1">
+<input type="radio" name="q1"><span>a Comet</span><br>
+<input type="radio" name="q1" id="a1correct"><span>a Star<br></span>
+<input type="radio" name="q1"><span>a Planet<br></span>
+<input type="radio" name="q1"><span>None of The Above<br><span>
+<input type="button" value="submit answer" onclick="check1()">
+</form>
+
+<span id="answer1"></span>
+
+</div>
+
+<div>
+<h2>Question 2:What is the largest planet in the Solar System?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>the Earth<br></span>
+<input type="radio" name="q1"><span>the Mars<br></span>
+<input type="radio" name="q1" id="a2correct"><span>the Jupiter<br></span>
+<input type="radio" name="q1"><span>None of The Above<br></span>
+<input type="button" value="submit answer" onclick="check2()">
+</form>
+
+<span id="answer2"></span>
+</div>
+
+
+
+<div>
+<h2>Question 3:How many planets are there in the Solar System</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>7<br></span>
+<input type="radio" name="q1" id="a3correct"><span>8<br></span>
+<input type="radio" name="q1"><span>9<br></span>
+<input type="radio" name="q1"><span>None of The Above<br></span>
+<input type="button" value="submit answer" onclick="check3()">
+</form>
+
+<span id="answer3"></span>
+</div>
+
+
+<div>
+<h2>Question 4: What is NOT one of the Saturn's natural sattelites?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>Titan<br></span>
+<input type="radio" name="q1"><span>Enceladus<br></span>
+<input type="radio" name="q1"><span>Rhea<br></span>
+<input type="radio" name="q1"id="a4correct"><span>Moon<br></span>
+<input type="button" value="submit answer" onclick="check4()">
+</form>
+
+<span id="answer4"></span>
+</div>
+
+
+<div>
+<h2>Question 5: Which planet is named after Roman god of war?</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"id="a5correct"><span>Mars<br></span>
+<input type="radio" name="q1"><span>Mercury<br></span>
+<input type="radio" name="q1"><span>Earth<br></span>
+<input type="radio" name="q1"><span>Jupiter<br></span>
+<input type="button" value="submit answer" onclick="check5()">
+</form>
+
+<span id="answer5"></span>
+
+</div>
+
+<div>
+<h2>Question 6: The biosphere can be found on the...</h2>
+
+
+<form name="question1">
+<input type="radio" name="q1"><span>Neptune<br></span>
+<input type="radio" name="q1"><span>Saturn<br></span>
+<input type="radio" name="q1"><span>Moon<br></span>
+<input type="radio" name="q1"id="a6correct"><span>Earth<br></span>
+<input type="button" value="submit answer" onclick="check6()">
+</form>
+
+<span id="answer6"></span>
+
+</div>
+
+
+
+
+<h1 style="color:#FFC0CB;margin-left:20px;">Current score: <span id="score">0</span></h1>
+
+
+
+<h1 style="color:#FFF0F5;margin-left:250px;"> Good Job! Thanks for participating! :) </h1>
+
+</body>
+
+

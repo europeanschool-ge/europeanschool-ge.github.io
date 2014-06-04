@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Math Quiz</title>
+
+<link rel="stylesheet" type="text/css" href="nanuka1.css">
+
+<div>
+<script>
+document.write("<h1>Welcome to my Math Quiz! Let's see how smart you are :)</h1>");
+</script>
+</div>
+
+
+
+<script>
+
+
+
+var score = new Array;
+
+function showScore()
+{
+  var total=0;
+  for (i in score)
+  {
+    total+=score[i];
+  }
+  document.getElementById('score').innerHTML=total;
+
+}
+
+function check1()
+{
+  if(document.getElementById('a1correct').checked)
+ // if(document.question1["q1"]["correct"].checked)
+ // if(document.question1["q1"]["0"].checked)
+  {
+    document.getElementById('answer1').innerHTML="Yay correct!";
+    score[0]=1;
+  }
+  else
+  {
+    document.getElementById('answer1').innerHTML="Try again!:(";
+    score[0]=0;
+  }    
+  showScore();
+}
+
+
+function check2()
+{
+  if(document.getElementById('a2correct').checked)
+  {
+    document.getElementById('answer2').innerHTML="correct!You are very smart!";
+    score[1]=1;
+  }
+  else
+  {
+    document.getElementById('answer2').innerHTML="Don't worry!Try again:)";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check3()
+{
+  if(document.getElementById('a3correct').checked)
+  {
+    document.getElementById('answer3').innerHTML="Wow! again correct!";
+    score[2]=1;
+  }
+  else
+  {
+    document.getElementById('answer3').innerHTML="wrong!:(";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check4()
+{
+  if(document.getElementById('a4correct').checked)
+  {
+    document.getElementById('answer4').innerHTML="congrats:)";
+    score[3]=1;
+  }
+  else
+  {
+    document.getElementById('answer4').innerHTML="Try again :(";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check5()
+{
+  if(document.getElementById('a5correct').checked)
+  {
+    document.getElementById('answer5').innerHTML="You amazed me with your smartness ! :)";
+    score[4]=1;
+  }
+  else
+  {
+    document.getElementById('answer5').innerHTML="Try again :)";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check6()
+{
+  if(document.getElementById('a6correct').checked)
+  {
+    document.getElementById('answer6').innerHTML="Clever Student! :)";
+    score[5]=1;
+  }
+  else
+  {
+    document.getElementById('answer6').innerHTML="Try again! :)";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+</script>
+
+
+
+</head>
+<body>
+
+
+<div>
+<h2>Question 1:Which of the following is correct for: (29-16)X2 </h2>
+
+<img border="0" src="mickey.jpg" alt="Pulpit rock" width="300" height="220">
+<form name="question1">
+<img border="0" src="13.jpg" alt="Pulpit rock" width="300" height="220">
+<input type="radio" name="q1"><span>13</span><br>
+<img border="0" src="26.jpg" alt="Pulpit rock" width="300" height="220">
+<input type="radio" name="q1" id="a1correct"><span>26</span>
+<img border="0" src="3.jpg" alt="Pulpit rock" width="300" height="220">
+<input type="radio" name="q1"><span>3<br></span>
+<img border="0" src="42.jpg" alt="Pulpit rock" width="300" height="220">
+<input type="radio" name="q1"><span>42</span>
+<input type="button" value="submit answer" onclick="check1()">
+</form>
+
+<span id="answer1"></span>
+
+</div>
+
+<div>
+<h2>Question 2:What is the value of X? (X+4)3=24</h2>
+
+<img border="0" src="t.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<img border="0" src="6.jpg" alt="Pulpit rock" width="304" height="228">
+<input type="radio" name="q1"><span>6<br></span>
+<img border="0" src="4.jpg" alt="Pulpit rock" width="304" height="228">
+<input type="radio" name="q1"><span>4<br></span>
+<img border="0" src="12.jpg" alt="Pulpit rock" width="304" height="228">
+<input type="radio" name="q1" id="a2correct"><span>12<br></span>
+<input type="radio" name="q1"><span>None of the above<br></span>
+<input type="button" value="submit answer" onclick="check2()">
+</form>
+
+<span id="answer2"></span>
+</div>
+
+
+
+<div>
+<h2>Question 3: Complete:7,10,12,14,17,X,21?</h2>
+
+<img border="0" src="c.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<img border="0" src="20.jpg" alt="Pulpit rock" width="304" height="228">
+<input type="radio" name="q1"><span>20<br></span>
+<img border="0" src="19.jpg" alt="Pulpit rock" width="304" height="228">
+<input type="radio" name="q1" id="a3correct"><span>19<br></span>
+<img border="0" src="18.jpg" alt="Pulpit rock" width="304" height="228">
+<input type="radio" name="q1"><span>18<br></span>
+<input type="radio" name="q1"><span>17.5<br></span>
+<input type="button" value="submit answer" onclick="check3()">
+</form>
+
+<span id="answer3"></span>
+</div>
+
+
+<div>
+<h2>Question 4: How do you write this number using digits? Eighty </h2>
+
+<img border="0" src="f.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<img border="0" src="18.jpg" alt="Pulpit rock" width="304" height="228">
+<input type="radio" name="q1"><span>18<br></span>
+<img border="0" src="8.jpg" alt="Pulpit rock" width="304" height="228">
+<input type="radio" name="q1"><span>8<br></span>
+<img border="0" src="800.jpg" alt="Pulpit rock" width="304" height="228">
+<input type="radio" name="q1"><span>800<br></span>
+<img border="0" src="80.jpg" alt="Pulpit rock" width="304" height="228">
+<input type="radio" name="q1"id="a4correct"><span>80<br></span>
+<input type="button" value="submit answer" onclick="check4()">
+</form>
+
+<span id="answer4"></span>
+</div>
+
+
+<div>
+<h2>Question 5: At a cafe, there is only 7seats for each table. How many tables will a group of 56 people need?</h2>
+
+<img border="0" src="o.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<img border="0" src="8.jpg" alt="Pulpit rock" width="304" height="228">
+<input type="radio" name="q1"id="a5correct"><span>8<br></span>
+<img border="0" src="49.jpg" alt="Pulpit rock" width="304" height="228">
+<input type="radio" name="q1"><span>49<br></span>
+<img border="0" src="63.jpg" alt="Pulpit rock" width="304" height="228">
+<input type="radio" name="q1"><span>63<br></span>
+<img border="0" src="56.jpg" alt="Pulpit rock" width="304" height="228">
+<input type="radio" name="q1"><span>56<br></span>
+<input type="button" value="submit answer" onclick="check5()">
+</form>
+
+<span id="answer5"></span>
+
+</div>
+
+<div>
+<h2>Question 6: In 543, in which place is the 5?</h2>
+
+<img border="0" src="b.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Ones<br></span>
+<input type="radio" name="q1"><span>Thousands<br></span>
+<input type="radio" name="q1"><span>We cannot identify<br></span>
+<input type="radio" name="q1"id="a6correct"><span>Houndreds<br></span>
+<input type="button" value="submit answer" onclick="check6()">
+</form>
+
+<span id="answer6"></span>
+
+</div>
+
+
+
+
+<h1>Score</h1>
+<p>Current score: <span id="score">0</span></p>
+
+<p id="demo">
+Thank you for visiting my quiz !This is the only beginning! If you like my quiz, I will add more questions to test your smartness! :) Did you like it? If you have any advice let me know :) send it to my e-mail : nanu.goguadze@gmail.com
+</p>
+
+
+<script>
+function myFunction()
+{
+x=document.getElementById("demo");  // Find the element
+x.innerHTML="Thank you very much <3";    // Change the content
+}
+</script>
+
+
+
+
+<script>
+function myFunction1()
+{
+x=document.getElementById("demo");  // Find the element
+x.innerHTML=":) I am waiting for your feedback:)";    // Change the content
+}
+</script>
+
+
+
+
+<button type="button" onclick="myFunction()">Yeees :) </button>
+
+<button type="button" onclick="myFunction1()">I think you should improve it :) </button>
+
+
+
+
+
+
+
+
+</body>
+
+

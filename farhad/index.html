@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<title>The Fun Quiz</title>
+<img border="0" src="Sponge Bob correct.png" alt="Pulpit rock" width="200" height="200">
+<img border="0" src="Sponge Bob The End.png" alt="Pulpit rock" width="200" height="200">
+<img border="0" src="SpongeBob.png" alt="Pulpit rock" width="200" height="200">
+<img border="0" src="minions.png" alt="Pulpit rock" width="220" height="200">
+<img border="0" src="minions (1).png" alt="Pulpit rock" width="200" height="200">
+<img border="0" src="minions 2.png" alt="Pulpit rock" width="200" height="200">
+
+<link rel="stylesheet" type="text/css" href="Knowledgequizstyle.css">
+
+<div>
+<script>
+document.write("<h1>Knowledge Quiz</h1>");
+</script>
+</div>
+
+
+
+<script>
+
+
+
+var score = new Array;
+
+function showScore()
+{
+  var total=0;
+  for (i in score)
+  {
+    total+=score[i];
+  }
+  document.getElementById('score').innerHTML=total;
+
+}
+
+function check1()
+{
+  if(document.getElementById('a1correct').checked)
+ // if(document.question1["q1"]["correct"].checked)
+ // if(document.question1["q1"]["0"].checked)
+  {
+    document.getElementById('answer1').innerHTML="correct!";
+    score[0]=1;
+  }
+  else
+  {
+    document.getElementById('answer1').innerHTML="wrong!";
+    score[0]=0;
+  }    
+  showScore();
+}
+
+
+function check2()
+{
+  if(document.getElementById('a2correct').checked)
+  {
+    document.getElementById('answer2').innerHTML="correct!";
+    score[1]=1;
+  }
+  else
+  {
+    document.getElementById('answer2').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check3()
+{
+  if(document.getElementById('a3correct').checked)
+  {
+    document.getElementById('answer3').innerHTML="correct!";
+    score[2]=1;
+  }
+  else
+  {
+    document.getElementById('answer3').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check4()
+{
+  if(document.getElementById('a4correct').checked)
+  {
+    document.getElementById('answer4').innerHTML="correct!";
+    score[3]=1;
+  }
+  else
+  {
+    document.getElementById('answer4').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check5()
+{
+  if(document.getElementById('a5correct').checked)
+  {
+    document.getElementById('answer5').innerHTML="correct!";
+    score[4]=1;
+  }
+  else
+  {
+    document.getElementById('answer5').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check6()
+{
+  if(document.getElementById('a6correct').checked)
+  {
+    document.getElementById('answer6').innerHTML="correct!";
+    score[5]=1;
+  }
+  else
+  {
+    document.getElementById('answer6').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+</script>
+
+
+
+</head>
+<body>
+
+
+<div>
+<h2>Question 1: In which country christianity is the main religion?</h2>
+
+<img border="0" src="Azerbaijan.png" alt="Pulpit rock" width="315" height="220">
+<img border="0" src="Georgia.png" alt="Pulpit rock" width="315" height="220">
+<img border="0" src="China.png" alt="Pulpit rock" width="315" height="220">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Azerbaijan</span><br>
+<input type="radio" name="q1" id="a1correct"><span>Georgia<br></span>
+<input type="radio" name="q1"><span>China<br></span>
+<input type="radio" name="q1"><span>None of the options<br><span>
+<input type="button" value="submit answer" onclick="check1()">
+</form>
+
+<span id="answer1"></span>
+
+</div>
+
+<div>
+<h2>Question 2: Who is the biggest animal on the Earth?</h2>
+
+<img border="0" src="Elephant.png" alt="Pulpit rock" width="304" height="228">
+<img border="0" src="giraffe.png" alt="Pulpit rock" width="304" height="228">
+<img border="0" src="whale.png" alt="Pulpit rock" width="304" height="228">
+<form name="question1">
+<input type="radio" name="q1"><span>Giraffe<br></span>
+<input type="radio" name="q1"><span>Elephant<br></span>
+<input type="radio" name="q1" id="a2correct"><span>Whale<br></span>
+<input type="radio" name="q1"><span>None of the options<br></span>
+<input type="button" value="submit answer" onclick="check2()">
+</form>
+
+<span id="answer2"></span>
+</div>
+
+
+
+<div>
+<h2>Question 3: Which of the followings shows semi-circle?</h2>
+
+<img border="0" src="circle.png" alt="Pulpit rock" width="290" height="280">
+<img border="0" src="semicircle.png" alt="Pulpit rock" width="320" height="228">
+<img border="0" src="linear.png" alt="Pulpit rock" width="290" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>1<br></span>
+<input type="radio" name="q1" id="a3correct"><span>2<br></span>
+<input type="radio" name="q1"><span>3<br></span>
+<input type="radio" name="q1"><span>None of the options<br></span>
+<input type="button" value="submit answer" onclick="check3()">
+</form>
+
+<span id="answer3"></span>
+</div>
+
+
+<div>
+<h2>Question 4: Which of the following songs was sung by Beatles?</h2>
+
+<img border="0" src="Heybrother.jpg" alt="Pulpit rock" width="260" height="228">
+<img border="0" src="thinkingaboutyou.jpg" alt="Pulpit rock" width="260" height="228">
+<img border="0" src="undercontrol.jpeg" alt="Pulpit rock" width="260" height="228">
+<img border="0" src="yellowsubmarine.jpg" alt="Pulpit rock" width="260" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Thinking About You<br></span>
+<input type="radio" name="q1"><span>Hey Brother<br></span>
+<input type="radio" name="q1"><span>Under Control<br></span>
+<input type="radio" name="q1"id="a4correct"><span>Yellow Submarine<br></span>
+<input type="button" value="submit answer" onclick="check4()">
+</form>
+
+<span id="answer4"></span>
+</div>
+
+
+<div>
+<h2>Question 5: Which of the following constructions shows Roman Architecture?</h2>
+
+
+<img border="0" src="Roman Architecture.jpg" alt="Pulpit rock" width="304" height="228">
+<img border="0" src="Spanish Architecture.jpg" alt="Pulpit rock" width="304" height="228">
+<img border="0" src="Greek Architecture.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"id="a5correct"><span>1<br></span>
+<input type="radio" name="q1"><span>2<br></span>
+<input type="radio" name="q1"><span>3<br></span>
+<input type="radio" name="q1"><span>None of the options<br></span>
+<input type="button" value="submit answer" onclick="check5()">
+</form>
+
+<span id="answer5"></span>
+
+</div>
+
+<div>
+<h2>Question 6: Question from the book The Adventures of Tom Sawyer (Book by Mark Twain): Who is Sid?</h2>
+
+<img border="0" src="tomsawyer.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Aunt Polly's boyfriend<br></span>
+<input type="radio" name="q1"><span>Tom's cocker spaniel<br></span>
+<input type="radio" name="q1"><span>Tom's father<br></span>
+<input type="radio" name="q1"id="a6correct"><span>Tom's younger half-brother<br></span>
+<input type="button" value="submit answer" onclick="check6()">
+</form>
+
+<span id="answer6"></span>
+
+</div>
+
+
+
+
+<h1>Score</h1>
+<p>Current score: <span id="score">0</span></p>
+
+<p id="demo">
+Did You Like This Quiz?
+</p>
+
+
+<script>
+function myFunction()
+{
+x=document.getElementById("demo");  // Find the element
+x.innerHTML="Thanks for participating!";    // Change the content
+}
+</script>
+
+
+
+
+<script>
+function myFunction1()
+{
+x=document.getElementById("demo");  // Find the element
+x.innerHTML=":(";    // Change the content
+}
+</script>
+
+
+
+
+<button type="button" onclick="myFunction()">Yeah!</button>
+
+<button type="button" onclick="myFunction1()">Nope!</button>
+
+
+
+
+
+
+
+
+</body>
+
+

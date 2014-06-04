@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<title>Pollution Quiz</title>
+
+<link rel="stylesheet" type="text/css" href="Pollution quiz style.css">
+
+<div>
+<script>
+document.write("<h1>Pollution Quiz</h1>");
+</script>
+</div>
+
+
+
+<script>
+
+
+
+var score = new Array;
+
+function showScore()
+{
+  var total=0;
+  for (i in score)
+  {
+    total+=score[i];
+  }
+  document.getElementById('score').innerHTML=total;
+
+}
+
+function check1()
+{
+  if(document.getElementById('a1correct').checked)
+ // if(document.question1["q1"]["correct"].checked)
+ // if(document.question1["q1"]["0"].checked)
+  {
+    document.getElementById('answer1').innerHTML="correct!";
+    score[0]=1;
+  }
+  else
+  {
+    document.getElementById('answer1').innerHTML="wrong!";
+    score[0]=0;
+  }    
+  showScore();
+}
+
+
+function check2()
+{
+  if(document.getElementById('a2correct').checked)
+  {
+    document.getElementById('answer2').innerHTML="correct!";
+    score[1]=1;
+  }
+  else
+  {
+    document.getElementById('answer2').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check3()
+{
+  if(document.getElementById('a3correct').checked)
+  {
+    document.getElementById('answer3').innerHTML="correct!";
+    score[2]=1;
+  }
+  else
+  {
+    document.getElementById('answer3').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check4()
+{
+  if(document.getElementById('a4correct').checked)
+  {
+    document.getElementById('answer4').innerHTML="correct!";
+    score[3]=1;
+  }
+  else
+  {
+    document.getElementById('answer4').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+
+function check5()
+{
+  if(document.getElementById('a5correct').checked)
+  {
+    document.getElementById('answer5').innerHTML="correct!";
+    score[4]=1;
+  }
+  else
+  {
+    document.getElementById('answer5').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+function check6()
+{
+  if(document.getElementById('a6correct').checked)
+  {
+    document.getElementById('answer6').innerHTML="correct!";
+    score[5]=1;
+  }
+  else
+  {
+    document.getElementById('answer6').innerHTML="wrong!";
+    score[1]=0;
+  }
+  showScore();
+}
+
+
+
+</script>
+
+
+
+</head>
+<body>
+
+
+<div>
+<h2>Question 1:What damages environment?</h2>
+
+<img border="0" src="cars.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Animals</span><br>
+<input type="radio" name="q1" id="a1correct"><span>Cars<br></span>
+<input type="radio" name="q1"><span>Trees<br></span>
+<input type="radio" name="q1"><span>None of the above<br><span>
+<input type="button" value="submit answer" onclick="check1()">
+</form>
+
+<span id="answer1"></span>
+
+</div>
+
+<div>
+<h2>Question 2:Why factories are dangerous for einvironment?</h2>
+
+<img border="0" src="factories.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Huge building<br></span>
+<input type="radio" name="q1"><span>Cats<br></span>
+<input type="radio" name="q1" id="a2correct"><span>Dangerous gas<br></span>
+<input type="radio" name="q1"><span>Bad workers<br></span>
+<input type="button" value="submit answer" onclick="check2()">
+</form>
+
+<span id="answer2"></span>
+</div>
+
+
+
+<div>
+<h2>Question 3: What wind farms are producing?</h2>
+
+<img border="0" src="wind.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Wind<br></span>
+<input type="radio" name="q1" id="a3correct"><span>Electricity<br></span>
+<input type="radio" name="q1"><span>Wood<br></span>
+<input type="radio" name="q1"><span>Nothing<br></span>
+<input type="button" value="submit answer" onclick="check3()">
+</form>
+
+<span id="answer3"></span>
+</div>
+
+
+<div>
+<h2>Question 4: Is the world getting warmer?</h2>
+
+<img border="0" src="warm.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>No<br></span>
+<input type="radio" name="q1"><span>None of the above<br></span>
+<input type="radio" name="q1"><span>No one knows<br></span>
+<input type="radio" name="q1"id="a4correct"><span>Yes<br></span>
+<input type="button" value="submit answer" onclick="check4()">
+</form>
+
+<span id="answer4"></span>
+</div>
+
+
+<div>
+<h2>Question 5: What is recycling?</h2>
+
+<img border="0" src="recycle.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"id="a5correct"><span>Recycle rubish<br></span>
+<input type="radio" name="q1"><span>Recycle animals<br></span>
+<input type="radio" name="q1"><span>Getting free from rubish<br></span>
+<input type="radio" name="q1"><span>None of the above<br></span>
+<input type="button" value="submit answer" onclick="check5()">
+</form>
+
+<span id="answer5"></span>
+
+</div>
+
+<div>
+<h2>Question 6: Who is damaging the environment?</h2>
+
+<img border="0" src="people.jpg" alt="Pulpit rock" width="304" height="228">
+
+<form name="question1">
+<input type="radio" name="q1"><span>Computers<br></span>
+<input type="radio" name="q1"><span>Oceans<br></span>
+<input type="radio" name="q1"><span>Tigers<br></span>
+<input type="radio" name="q1"id="a6correct"><span>People<br></span>
+<input type="button" value="submit answer" onclick="check6()">
+</form>
+
+<span id="answer6"></span>
+
+</div>
+
+
+
+
+<h1>Score</h1>
+<p>Current score: <span id="score">0</span></p>
+
+<p id="demo">
+Did You Like This Quiz?
+</p>
+
+
+<script>
+function myFunction()
+{
+x=document.getElementById("demo");  // Find the element
+x.innerHTML="It is great :)";    // Change the content
+}
+</script>
+
+
+
+
+<script>
+function myFunction1()
+{
+x=document.getElementById("demo");  // Find the element
+x.innerHTML="it is bad :(";    // Change the content
+}
+</script>
+
+
+
+
+<button type="button" onclick="myFunction()">Yea!</button>
+
+<button type="button" onclick="myFunction1()">Noooo!</button>
+
+
+
+
+
+
+
+
+</body>
+
+
