@@ -1,0 +1,47 @@
+﻿var questionArray = [
+{question:"Lets say you are with your family walking in the forest , perhaps looking for mushrooms, and then suddenly you see a little baby bear infront of you, wondering... WHAT NEXT ? ",
+a:"You try to walk back slowly , so the mother of the little bear wont appear...",
+b:"You try to scare him by making loud noises, so he will go away...",
+c:"You panic and start running away screaming...",
+d:"You go forward to see him closely because you think he is cute, so you will take a picture...",
+answer:"You try to walk back slowly , so the mother of the little bear wont appear...",
+suggest:"Mothers always look after their children, therefore if you see a little baby bear, there probably will be it's mother near...",
+image:"bears.jpg"
+},
+{question:"Lets say you are hiking with you family in mountains and you already became tired. So you take out some snack that you have carried in your back pack for exactly these kind of situations. After you've finished eating...WHAT NEXT ?",
+a:"Take all trash to your back pack, and when you see a trash can, you throw it away...",
+b:"You throw the papers anywhere, doesn&#8217;t matter, it&#8217;s nothing...",
+c:"You bury the trash in soil",
+d:"You burn it in fire, if there you made one.",
+answer:"Take all trash to your back pack, and when you see a trash can, you throw it away...",
+suggest:"It isn't a good thing to do, to leave trash in nature like that. If we burn it, bad chemicals will go into the air. If we bury it, animals can find it. Animals like wild boars dig in ground; they can harm themselves.  ",
+image:"trash.jpg"
+},
+{question:"What would you do if you and your friends were having a race in a forest road, and one of you twisted his ankle...WHAT NEXT ?",
+a:"Panic, scream, and run away to get out of the situation, by leaving him there pretending like you have nothing to do with it...",
+b:"Call somebody for help. Either parents, doctor, or even the emergency...",
+c:"Try to help him calm down, maybe wrap his ankle carefully with something...",
+d:"Both (d) and (c) ",
+answer:"Both (d) and (c) ",
+suggest:"If your friend fell down and twisted his ankle, it is good to call somebody for help. Also to calm him down, that nothing is broken just twisted. It might be hard for him to stand up and walk so a good suggestion would be to wrap his ancle with some kind of a cloth, and then help him stand up on the other lag, and carefully walk with him slowly to either home or if necessary then to the hospital. :)",
+image:"race.jpg"
+},
+{question:"Lets say you are a really good friend of somebody that is constantly having problems with other kids bulling him...WHAT NEXT ?",
+a:"You go to class, and ask somebody for their homework to copy...",
+b:"You go to class and tell the teacher that you didn&#8217;t do the assignment last night, because “it was so difficult.”",
+c:"You go to class and tell the teacher that “you forgot your notebook”.",
+d:"You tell him the truth. That you forgot, or you didn&#8217;t understand.",
+answer:"You tell him the truth. That you forgot, or you didn't understand.",
+suggest:"Talking to somebody that is close to you, somebody that you can be honest with, is a good thing to do... Dont think that you are weak or lame to ask for help. Asking for help is absolutely normal ack, when you dont know what to do. :) And also, standing up to your enemy is also good. But fighting isnt the best way though. When talking to somebody about it, they will give advices about what to do next.. :)",
+image:"school.jpg"
+},
+{question:"Lets say you are in quite a big shopping mall/centre with your parents and you get lost...WHAT NEXT ?",
+a:"You start crying and you start looking for them..",
+b:"You wait there where you are, hoping they will comeback for you..",
+c:"You go to the shop assistant to ask for help..",
+d:"both (c) and (b)",
+answer:"both (c) and (b)",
+suggest:"It is good to not run away and start looking for them. Maybe yes, you might find them if it is a smaller shop or if you are lucky. But afterall they will soon figure out that you are missing and they will find you. But even asking for help isnt a bad decision. They will call them by microphone, and soon your parent will get to you . :)",
+image:"lost.jpg"
+}
+]

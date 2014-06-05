@@ -1,0 +1,34 @@
+﻿img
+{
+width:500px;
+height:400px;
+float: right;
+}
+
+h1
+{
+font-size:7em;
+}
+
+input
+{
+font-size:5em;
+padding:30px;
+background-color:orange;
+}
+
+
+p
+{
+font-size:2em;
+}
+
+{
+//background-color:;
+}
+h1 {
+    color: brown;
+}
+body {
+    background-color: #CCFF66;
+}

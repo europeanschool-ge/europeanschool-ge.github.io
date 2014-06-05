@@ -1,0 +1,73 @@
+﻿var questionArray = [
+{question:"Please speak __ little louder",
+a:"a",
+b:"an",
+c:"the",
+d:"(nothing)",
+answer:"a",
+
+},
+{question:"He is one of __ smartest people I know",
+a:"a",
+b:"an",
+c:"the",
+d:"(nothing)",
+answer:"the"
+},
+{question:"How __ factories are in your area",
+a:"much",
+b:"some",
+c:"any",
+d:"many",
+answer:"many"
+},
+{question:"__ pupils can answer this question",
+a:"Little",
+b:"A little",
+c:"Few",
+d:"A few",
+answer:"Few"
+},
+{question:"We plan to go __ a picnic next saturday",
+a:"on",
+b:"at",
+c:"in",
+d:"with",
+answer:"on"
+},
+{question:"Our father is standing __ the gate.",
+a:"by",
+b:"between",
+c:"next",
+d:"for",
+answer:"by"
+},
+{question:"She told us __ her new projects.",
+a:"about",
+b:"at",
+c:"for",
+d:"to",
+answer:"about"
+},
+{question:"He is __ the computer.",
+a:"to using",
+b:"using",
+c:"use",
+d:"uses",
+answer:"using"
+},
+{question:"__ he play baseball after school?",
+a:"Is",
+b:"Do",
+c:"Does",
+d:"Has",
+answer:"Does"
+},
+{question:"__ month is the Chinese new year?",
+a:"When",
+b:"What",
+c:"Where",
+d:"How",
+answer:"What"
+
+}]

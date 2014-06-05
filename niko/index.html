@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>
+A Better JavaScript Quiz
+</title>
+<link rel="stylesheet" type="text/css" href="quiz.css">
+
+<script type="text/javascript" src="oo.js"></script>
+<script type="text/javascript" src="questions.js"></script>
+<script>
+
+var questionCounter=1;
+var score=0;
+var answered=false;
+
+
+
+
+function nextQuestion()
+{
+	var nextText="";
+	nextText+="<p>Your score is: " + score + " out of " + questionArray.length + "</p>";
+	if (questionCounter<=questionArray.length)
+	{
+		nextText+="<input type=\"button\" onclick=\"showQuestion()\" value=\"Next Question\">";	
+	}
+	else
+	{
+		nextText+="<p>The End!</p>";
+		nextText+="<input type=\"button\" onclick=\"startQuiz()\" value=\"Start Over\">";
+	}
+	document.getElementById("quizContainer").innerHTML+=nextText;	
+}
+
+function checkAnswer(ans)
+{
+
+	var answerText="<p>You answer was: " + ans + "</p>";	
+
+	if (ans==questionArray[questionCounter-1].answer)
+	{
+		answerText += "<p>You are correct!</p>";
+		score++;
+	}
+	else
+	{
+		answerText += "<p>You are wrong!</p>";
+		answerText += "<p>The correct answer was: ";
+		answerText += questionArray[questionCounter-1].answer;
+		answerText += "</p>"
+	}
+	document.getElementById("quizContainer").innerHTML+=answerText;
+
+}
+
+function submitAnswer(ans)
+{
+	
+	if (answered==false)
+	{
+		answered=true;
+		checkAnswer(ans);
+		questionCounter++;
+		nextQuestion();
+	}
+}
+
+
+function showQuestion()
+{
+	answered=false;
+	var questionText="";
+
+	var q = questionArray[questionCounter-1];
+
+	if (q.image)
+	{	
+		questionText+="<img src=\"" + q.image + "\">";
+	}
+
+
+	questionText+="<p>" + questionCounter + ": ";
+	questionText+=q.question + "</p>";
+	questionText+="<p onclick=\"submitAnswer('" + q.a + "')\">A: ";
+	questionText+=q.a + "</p>";
+	questionText+="<p onclick=\"submitAnswer('" + q.b + "')\">B: ";
+	questionText+=q.b + "</p>";
+	questionText+="<p onclick=\"submitAnswer('" + q.c + "')\">C: ";
+	questionText+=q.c + "</p>";
+	questionText+="<p onclick=\"submitAnswer('" + q.d + "')\">D: ";
+	questionText+=q.d + "</p>";
+		
+	document.getElementById("quizContainer").innerHTML=questionText;
+	initsnow();
+}
+
+
+
+function startQuiz()
+{
+	questionCounter=1;
+	score=0;
+	showQuestion();	
+}
+
+
+</script>
+</head>
+<body>
+
+<h1 onclick="alert('hi')">Welcome to the quiz!</h1>
+
+<div id="quizContainer">
+<input type="button" onclick="startQuiz()" value="Start Quiz">
+
+</div>
+
+</body>
+</html>

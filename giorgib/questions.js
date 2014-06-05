@@ -1,0 +1,52 @@
+﻿var questionArray = [
+{question:"what is the capital of Georgia?",
+a:"Tbilisi",
+b:"Batumi",
+c:"Kutaisi",
+d:"Zugdidi",
+answer:"Tbilisi",
+image:"smiley.svg"
+},
+{question:"What is the capital of Russia?",
+a:"Sant-Peterburg",
+b:"Trabzon",
+c:"Moscow",
+d:"Grozny",
+answer:"Moscow",
+image:"russia.svg"
+},
+{question:"in which continent is Albania?",
+a:"Europe",
+b:"Asia",
+c:"Africa",
+d:"South America",
+answer:"Europe"
+},
+{question:"What is the capital of Japan?",
+a:"Tokyo",
+b:"Almaty",
+c:"Atyrau",
+d:"Aqtau",
+answer:"Tokyo"
+},
+{question:"What is the capital of Armania?",
+a:"Yerevan",
+b:"Gyumri",
+c:"Alaverdi",
+d:"Ararat",
+answer:"Yerevan"
+},
+{question:"in which continent is China?",
+a:"Europe",
+b:"Asia",
+c:"Africa",
+d:"South America",
+answer:"Asia"
+},
+{question:"in which continent is Kazakhstan?",
+a:"Europe",
+b:"Asia",
+c:"Africa",
+d:"South America",
+answer:"Asia"
+}]

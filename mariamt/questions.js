@@ -1,0 +1,125 @@
+﻿var questionArray = [
+{question:"let's meet ____ the museum.",
+a:"in",
+b:"at",
+c:"on",
+d:"to",
+answer:"at",
+},
+{question:"he bought ____ new car yesterday.",
+a:"a",
+b:"an",
+c:"these",
+d:"this",
+answer:"a"
+},
+{question:"we went ____ a concert yesterday morning.",
+a:"in",
+b:"at",
+c:"on",
+d:"to",
+answer:"to"
+},
+{question:"I ____ the bus to work this morning.",
+a:"took",
+b:"take",
+c:"taken",
+d:"taked",
+answer:"took"
+},
+{question:"how ____ students attend the school today?",
+a:"much",
+b:"many",
+c:"a",
+d:"nothing",
+answer:"many",
+},
+{question:"Jaret has ____ money in the bank.",
+a:"a",
+b:"any",
+c:"some",
+d:"nothing",
+answer:"some",
+},
+{question:"would you like ____ cream in your coffee?",
+a:"any",
+b:"some",
+c:"a",
+d:"nothing",
+answer:"some",
+},
+{question:"____ book was written by Jane Anders.",
+a:"an",
+b:"any",
+c:"this",
+d:"these",
+answer:"this",
+},
+{question:"how ____ bread do we have in the kitchen?",
+a:"many",
+b:"much",
+c:"a",
+d:"nothing",
+answer:"much",
+},
+{question:"Now,There ____ milk in the refrigerator.",
+a:"is",
+b:"are",
+c:"was",
+d:"nothing",
+answer:"is",
+},
+{question:"I have ____ friends in America.",
+a:"a little",
+b:"a few",
+c:"any",
+d:"nothing",
+answer:"a few",
+},
+{question:"Many like to eat ____ chicken for dinner.",
+a:"some",
+b:"any",
+c:"the",
+d:"nothing",
+answer:"some",
+},
+{question:"There is ____ ice-cream.",
+a:"many",
+b:"a lot of",
+c:"a",
+d:"nothing",
+answer:"a lot of",
+},
+{question:"Eating ____ chocolate is unhealthy.",
+a:"many",
+b:"a lot of",
+c:"a",
+d:"nothing",
+answer:"a lot of",
+},
+{question:"We don't drink ____ orange juice.",
+a:"many",
+b:"much",
+c:"a lot of",
+d:"nothing",
+answer:"much",
+}]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

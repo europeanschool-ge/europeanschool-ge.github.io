@@ -1,0 +1,36 @@
+﻿img
+{
+width:500px;
+height:400px;
+float:none;
+}
+
+h1
+{
+font-size:6em;
+}
+
+input
+{
+font-size:5em;
+padding:50px;
+background-color:#00FF00;
+border-style:groove;
+}
+
+
+
+p
+{
+font-size:2em;
+}
+
+{
+//background-color:;
+}
+h1 {
+    color: orange;
+}
+body {
+    background-color: #d0e4fe;
+}
