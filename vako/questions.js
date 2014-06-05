@@ -21,7 +21,7 @@ b:"Yerevan",
 c:"Pretoria",
 d:"Cairo ",
 answer:"Pretoria",
-image:"sf.GIF"
+image:"sf.gif"
 },
 {question:"What is the capital of Mexico",
 a:"Astana",
@@ -29,7 +29,7 @@ b:"Almaty",
 c:"New york",
 d:"Mexico City",
 answer:"Mexico City",
-image:"mexico.GIF"
+image:"mexico.gif"
 },
 {question:"What is the capital of Azerbaijan",
 a:"Zakatala",
@@ -37,7 +37,7 @@ b:"Batumi",
 c:"Kutaisi",
 d:"Baku",
 answer:"Baku",
-image:"azerbaijan.GIF"
+image:"azerbaijan.gif"
 },
 {question:"What is the capital of Georgia",
 a:"Samegrelo",
